@@ -1589,7 +1589,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="GBGUL1Z2R6Ye7zUFSlvF-503" value="Informe Final" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;html=1;labelBackgroundColor=none;fillColor=#5D7F99;strokeColor=#D0CEE2;fontColor=#1A1A1A;" vertex="1" parent="1">
-          <mxGeometry x="-680" y="60" width="270" height="510" as="geometry" />
+          <mxGeometry x="-650" y="60" width="270" height="510" as="geometry" />
         </mxCell>
         <mxCell id="GBGUL1Z2R6Ye7zUFSlvF-504" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;labelBackgroundColor=none;strokeColor=#D0CEE2;fontColor=#1A1A1A;" vertex="1" parent="GBGUL1Z2R6Ye7zUFSlvF-503">
           <mxGeometry y="30" width="270" height="30" as="geometry" />
