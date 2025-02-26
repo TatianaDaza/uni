@@ -272,7 +272,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="mhiyrfmPje_6t8HJJJyb-102" value="Recibe la respuesta y &#xa;se la da al Docente asesor" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
-          <mxGeometry x="1140" y="1280" width="189" height="70" as="geometry" />
+          <mxGeometry x="1146" y="1296" width="189" height="70" as="geometry" />
         </mxCell>
         <mxCell id="mhiyrfmPje_6t8HJJJyb-103" value="Evalúa la sustentación y &#xa;el documento final" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
           <mxGeometry x="1436" y="1190" width="173" height="70" as="geometry" />
