@@ -95,7 +95,7 @@
           <mxGeometry x="841" y="440" width="189" height="70" as="geometry" />
         </mxCell>
         <mxCell id="mhiyrfmPje_6t8HJJJyb-43" value="Da la respuesta del &#xa;consejo de facultad" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
-          <mxGeometry x="1100" y="440" width="173" height="70" as="geometry" />
+          <mxGeometry x="1080" y="448" width="173" height="70" as="geometry" />
         </mxCell>
         <mxCell id="mhiyrfmPje_6t8HJJJyb-44" value="Organiza el orden de la &#xa;reunión de consejo &#xa;de facultad, agregando&#xa;la presentación del&#xa;anteproyecto" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
           <mxGeometry x="1080" y="329" width="172" height="72" as="geometry" />
@@ -137,7 +137,7 @@
           <mxGeometry x="362" y="440" width="173" height="70" as="geometry" />
         </mxCell>
         <mxCell id="mhiyrfmPje_6t8HJJJyb-54" value="Da la guía del trabajo" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
-          <mxGeometry x="862" y="640" width="147" height="54" as="geometry" />
+          <mxGeometry x="841" y="640" width="147" height="54" as="geometry" />
         </mxCell>
         <mxCell id="mhiyrfmPje_6t8HJJJyb-55" value="Rechazo o Corrección " style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
           <mxGeometry x="601" y="448" width="181" height="54" as="geometry" />
@@ -182,7 +182,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="mhiyrfmPje_6t8HJJJyb-64" value="Asesora para su sustentación y &#xa;acompaña en esta" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
-          <mxGeometry x="875" y="1182" width="177" height="70" as="geometry" />
+          <mxGeometry x="841" y="1182" width="177" height="70" as="geometry" />
         </mxCell>
         <mxCell id="mhiyrfmPje_6t8HJJJyb-66" value="Da la respuesta al estudiante" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
           <mxGeometry x="875" y="1290" width="177" height="76" as="geometry" />
@@ -196,7 +196,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="mhiyrfmPje_6t8HJJJyb-69" value="Revisa los informes y&#xa; entrega cuando&#xa; lo considera optimo" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
-          <mxGeometry x="856" y="732" width="166" height="70" as="geometry" />
+          <mxGeometry x="841" y="732" width="166" height="70" as="geometry" />
         </mxCell>
         <mxCell id="mhiyrfmPje_6t8HJJJyb-70" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" source="mhiyrfmPje_6t8HJJJyb-69" target="mhiyrfmPje_6t8HJJJyb-71" parent="1">
           <mxGeometry relative="1" as="geometry">
@@ -204,7 +204,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="mhiyrfmPje_6t8HJJJyb-71" value="Recibe y presenta&#xa; los informes al consejo&#xa; de facultad" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
-          <mxGeometry x="1111" y="735" width="162" height="64" as="geometry" />
+          <mxGeometry x="1080" y="732" width="162" height="64" as="geometry" />
         </mxCell>
         <mxCell id="mhiyrfmPje_6t8HJJJyb-72" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.5;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="mhiyrfmPje_6t8HJJJyb-52" target="mhiyrfmPje_6t8HJJJyb-46">
           <mxGeometry relative="1" as="geometry">
@@ -226,7 +226,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="mhiyrfmPje_6t8HJJJyb-76" value="Recibe los informes parciales" style="rounded=1;arcSize=23;strokeWidth=2" vertex="1" parent="1">
-          <mxGeometry x="1360" y="732" width="162" height="54" as="geometry" />
+          <mxGeometry x="1321" y="732" width="162" height="54" as="geometry" />
         </mxCell>
         <mxCell id="mhiyrfmPje_6t8HJJJyb-78" value="Empieza a elaborar el &#xa;documento final" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
           <mxGeometry x="362" y="850" width="154" height="54" as="geometry" />
@@ -236,8 +236,13 @@
             <Array as="points" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="mhiyrfmPje_6t8HJJJyb-186" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="mhiyrfmPje_6t8HJJJyb-80">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="920" y="900" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="mhiyrfmPje_6t8HJJJyb-80" value="Asesora y organiza&#xa; el cronograma" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
-          <mxGeometry x="865.5" y="850" width="147" height="54" as="geometry" />
+          <mxGeometry x="841" y="850" width="147" height="54" as="geometry" />
         </mxCell>
         <mxCell id="mhiyrfmPje_6t8HJJJyb-96" value="" style="curved=1;startArrow=none;endArrow=block;entryX=-0.017;entryY=0.64;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="mhiyrfmPje_6t8HJJJyb-71" target="mhiyrfmPje_6t8HJJJyb-76">
           <mxGeometry relative="1" as="geometry">
@@ -272,16 +277,16 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="mhiyrfmPje_6t8HJJJyb-102" value="Recibe la respuesta y &#xa;se la da al Docente asesor" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
-          <mxGeometry x="1146" y="1296" width="189" height="70" as="geometry" />
+          <mxGeometry x="1080" y="1293" width="189" height="70" as="geometry" />
         </mxCell>
         <mxCell id="mhiyrfmPje_6t8HJJJyb-103" value="Evalúa la sustentación y &#xa;el documento final" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
-          <mxGeometry x="1436" y="1190" width="173" height="70" as="geometry" />
+          <mxGeometry x="1320" y="1190" width="173" height="70" as="geometry" />
         </mxCell>
         <mxCell id="mhiyrfmPje_6t8HJJJyb-104" value="Organiza el orden de la &#xa;reunión de consejo &#xa;de facultad, agregando&#xa;la presentación del&#xa;Proyecto de grado" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
-          <mxGeometry x="1140" y="1079" width="172" height="72" as="geometry" />
+          <mxGeometry x="1081" y="1079" width="172" height="72" as="geometry" />
         </mxCell>
         <mxCell id="mhiyrfmPje_6t8HJJJyb-105" value="Escucha la sustentación " style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
-          <mxGeometry x="1428" y="1088" width="181" height="54" as="geometry" />
+          <mxGeometry x="1320" y="1088" width="181" height="54" as="geometry" />
         </mxCell>
         <mxCell id="mhiyrfmPje_6t8HJJJyb-106" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" edge="1" source="mhiyrfmPje_6t8HJJJyb-104" target="mhiyrfmPje_6t8HJJJyb-105" parent="1">
           <mxGeometry relative="1" as="geometry">
@@ -297,7 +302,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="mhiyrfmPje_6t8HJJJyb-108" value="Revisa el documento final &#xa;y aporta si falta algo" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
-          <mxGeometry x="875" y="971" width="147" height="54" as="geometry" />
+          <mxGeometry x="841" y="971" width="147" height="54" as="geometry" />
         </mxCell>
         <mxCell id="mhiyrfmPje_6t8HJJJyb-109" value="Corrige el documento y&#xa;lo entrega " style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
           <mxGeometry x="362" y="1088" width="147" height="54" as="geometry" />
@@ -315,7 +320,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="mhiyrfmPje_6t8HJJJyb-112" value="Revisa y procede &#xa;a entregarlo" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
-          <mxGeometry x="883" y="1088" width="147" height="54" as="geometry" />
+          <mxGeometry x="841" y="1088" width="147" height="54" as="geometry" />
         </mxCell>
         <mxCell id="mhiyrfmPje_6t8HJJJyb-113" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mhiyrfmPje_6t8HJJJyb-112" target="mhiyrfmPje_6t8HJJJyb-104">
           <mxGeometry relative="1" as="geometry">
@@ -543,7 +548,7 @@
           <mxGeometry x="362" y="1590" width="201" height="90" as="geometry" />
         </mxCell>
         <mxCell id="mhiyrfmPje_6t8HJJJyb-171" value="Correcion" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
-          <mxGeometry x="585" y="1286" width="197" height="74" as="geometry" />
+          <mxGeometry x="601" y="1280" width="197" height="74" as="geometry" />
         </mxCell>
         <mxCell id="mhiyrfmPje_6t8HJJJyb-172" value="" style="curved=1;startArrow=none;endArrow=block;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" target="mhiyrfmPje_6t8HJJJyb-174" parent="1" source="mhiyrfmPje_6t8HJJJyb-66">
           <mxGeometry relative="1" as="geometry">
@@ -560,7 +565,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="mhiyrfmPje_6t8HJJJyb-174" value="Aprobación " style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
-          <mxGeometry x="589" y="1450" width="189" height="70" as="geometry" />
+          <mxGeometry x="605" y="1426" width="189" height="70" as="geometry" />
         </mxCell>
         <mxCell id="mhiyrfmPje_6t8HJJJyb-175" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="mhiyrfmPje_6t8HJJJyb-171" parent="1" target="mhiyrfmPje_6t8HJJJyb-123">
           <mxGeometry relative="1" as="geometry">
@@ -583,7 +588,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="mhiyrfmPje_6t8HJJJyb-180" value="Rechazo" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
-          <mxGeometry x="597.5" y="1610" width="189" height="70" as="geometry" />
+          <mxGeometry x="605" y="1600" width="189" height="70" as="geometry" />
         </mxCell>
         <mxCell id="mhiyrfmPje_6t8HJJJyb-182" value="" style="curved=1;startArrow=none;endArrow=block;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="mhiyrfmPje_6t8HJJJyb-180" target="mhiyrfmPje_6t8HJJJyb-170">
           <mxGeometry relative="1" as="geometry">
