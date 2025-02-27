@@ -2500,7 +2500,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="yN9CcfTTydVQKI52Blbd-526" value="Social" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
-          <mxGeometry x="-4189" y="210" width="181" height="54" as="geometry" />
+          <mxGeometry x="-4189" y="574" width="181" height="54" as="geometry" />
         </mxCell>
         <mxCell id="yN9CcfTTydVQKI52Blbd-527" value="" style="curved=1;dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitDx=0;exitDy=0;" edge="1" target="yN9CcfTTydVQKI52Blbd-526" parent="1" source="yN9CcfTTydVQKI52Blbd-458">
           <mxGeometry relative="1" as="geometry">
@@ -2509,7 +2509,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="yN9CcfTTydVQKI52Blbd-531" value="Cultural" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
-          <mxGeometry x="-4188" y="290" width="181" height="54" as="geometry" />
+          <mxGeometry x="-4189" y="283" width="181" height="54" as="geometry" />
         </mxCell>
         <mxCell id="yN9CcfTTydVQKI52Blbd-532" value="" style="curved=1;dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitDx=0;exitDy=0;" edge="1" target="yN9CcfTTydVQKI52Blbd-531" parent="1" source="yN9CcfTTydVQKI52Blbd-458">
           <mxGeometry relative="1" as="geometry">
@@ -2518,7 +2518,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="yN9CcfTTydVQKI52Blbd-533" value="Innovación " style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
-          <mxGeometry x="-4188" y="359" width="181" height="54" as="geometry" />
+          <mxGeometry x="-4189" y="427" width="181" height="54" as="geometry" />
         </mxCell>
         <mxCell id="yN9CcfTTydVQKI52Blbd-534" value="" style="curved=1;dashed=1;dashPattern=2 3;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitDx=0;exitDy=0;" edge="1" target="yN9CcfTTydVQKI52Blbd-533" parent="1" source="yN9CcfTTydVQKI52Blbd-458">
           <mxGeometry relative="1" as="geometry">
@@ -2526,8 +2526,8 @@
             <mxPoint x="-4272" y="257" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="yN9CcfTTydVQKI52Blbd-537" value="Tecnólogo" style="rounded=1;arcSize=20;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="-3950" y="123" width="162" height="54" as="geometry" />
+        <mxCell id="yN9CcfTTydVQKI52Blbd-537" value="Reflejar el concepto de negocio a partir del diseño y construcción de un modelo&#xa;Análisis de mercado viable&#xa;Propuestas de valor claras" style="rounded=1;arcSize=20;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="-3950" y="123" width="510" height="54" as="geometry" />
         </mxCell>
         <mxCell id="yN9CcfTTydVQKI52Blbd-538" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitDx=0;exitDy=0;" edge="1" target="yN9CcfTTydVQKI52Blbd-537" parent="1" source="yN9CcfTTydVQKI52Blbd-459">
           <mxGeometry relative="1" as="geometry">
@@ -2536,18 +2536,18 @@
             <mxPoint x="-4020" y="230" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="yN9CcfTTydVQKI52Blbd-539" value="Tecnólogo" style="rounded=1;arcSize=20;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="-3950" y="210" width="162" height="54" as="geometry" />
+        <mxCell id="yN9CcfTTydVQKI52Blbd-539" value="Satisfacer las necesidades de la sociedad en el ambito social o economico&#xa;Busque solucionar problemas de la comunidad" style="rounded=1;arcSize=20;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="-3950" y="577" width="510" height="54" as="geometry" />
         </mxCell>
         <mxCell id="yN9CcfTTydVQKI52Blbd-540" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitDx=0;exitDy=0;" edge="1" target="yN9CcfTTydVQKI52Blbd-539" parent="1" source="yN9CcfTTydVQKI52Blbd-526">
           <mxGeometry relative="1" as="geometry">
             <Array as="points" />
-            <mxPoint x="-4020" y="230" as="sourcePoint" />
-            <mxPoint x="-3948" y="230" as="targetPoint" />
+            <mxPoint x="-4031" y="571" as="sourcePoint" />
+            <mxPoint x="-3959" y="571" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="yN9CcfTTydVQKI52Blbd-541" value="Pregrado" style="rounded=1;arcSize=20;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="-3950" y="290" width="162" height="54" as="geometry" />
+        <mxCell id="yN9CcfTTydVQKI52Blbd-541" value="Generar empresas o organizaciones que den valor simbólico&#xa;No perder el significado de los productos y costumbres pertenecientes a un contexto" style="rounded=1;arcSize=20;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="-3950" y="283" width="510" height="54" as="geometry" />
         </mxCell>
         <mxCell id="yN9CcfTTydVQKI52Blbd-542" value="" style="curved=1;startArrow=none;endArrow=block;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" target="yN9CcfTTydVQKI52Blbd-541" parent="1" source="yN9CcfTTydVQKI52Blbd-531">
           <mxGeometry relative="1" as="geometry">
@@ -2556,8 +2556,8 @@
             <mxPoint x="-3964.5" y="320" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="yN9CcfTTydVQKI52Blbd-543" value="Pregrado" style="rounded=1;arcSize=20;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="-3950" y="359" width="162" height="54" as="geometry" />
+        <mxCell id="yN9CcfTTydVQKI52Blbd-543" value="Características que lo vuelvan único&#xa;Puede ser un bien y un servicio&#xa;que permita un mejoramiento significativo" style="rounded=1;arcSize=20;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="-3950" y="427" width="510" height="54" as="geometry" />
         </mxCell>
         <mxCell id="yN9CcfTTydVQKI52Blbd-544" value="" style="curved=1;startArrow=none;endArrow=block;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" target="yN9CcfTTydVQKI52Blbd-543" parent="1" source="yN9CcfTTydVQKI52Blbd-533">
           <mxGeometry relative="1" as="geometry">
