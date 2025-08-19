@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 Edg/139.0.0.0" version="28.1.0">
   <diagram name="Página-1" id="oNXKOzVI4zQyK1Gj1o2h">
-    <mxGraphModel dx="1654" dy="1639" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2206" dy="1952" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="bZuBxN4-7xwh26Q07MRZ-0" />
         <mxCell id="bZuBxN4-7xwh26Q07MRZ-1" parent="bZuBxN4-7xwh26Q07MRZ-0" />
@@ -284,8 +284,8 @@
             <mxPoint x="260" y="190" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="xvbcIHaQCPfBAwP4kmZX-21" value="Primer laboratorio punto 1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#33FFFF);" vertex="1" parent="bZuBxN4-7xwh26Q07MRZ-1">
-          <mxGeometry x="306" y="-450" width="304" height="80" as="geometry" />
+        <mxCell id="xvbcIHaQCPfBAwP4kmZX-21" value="Primer laboratorio punto 1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;" vertex="1" parent="bZuBxN4-7xwh26Q07MRZ-1">
+          <mxGeometry x="328" y="-480" width="304" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
