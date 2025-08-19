@@ -284,6 +284,9 @@
             <mxPoint x="260" y="190" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="xvbcIHaQCPfBAwP4kmZX-21" value="Primer laboratorio punto 1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#33FFFF);" vertex="1" parent="bZuBxN4-7xwh26Q07MRZ-1">
+          <mxGeometry x="306" y="-450" width="304" height="80" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
