@@ -11,7 +11,7 @@ def primo (n):
 
 def factorial(c):
 
-    for i in range(1, c,1):
+    for i in range(1, c+1 ,1):
         fact = fact * i
         print("el factorial", fact)
 
