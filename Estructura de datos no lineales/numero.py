@@ -8,9 +8,9 @@ def primo (n):
         return False
     else:
         return True
-
+# calcular factorial
 def factorial(c):
-
+    fact=1
     for i in range(1, c+1 ,1):
         fact = fact * i
         print("el factorial", fact)
@@ -28,5 +28,6 @@ for i in range(2, 10):
     primo(c)
     if primo(c):
         print("es primo")
+        factorial(c)
     else:
         print("no es primo")
