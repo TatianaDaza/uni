@@ -5,9 +5,16 @@ def primo (n):
             c= c+1
             break
     if c > 0 :
-        print ("El numero no es primo")
+        return False
     else:
-        print ("El numero es primo")
+        return True
+
+def factorial(c):
+
+    for i in range(1, c,1):
+        fact = fact * i
+        print("el factorial", fact)
+
 
 # serie fibonachi
 a = b = 1
@@ -19,4 +26,7 @@ for i in range(2, 10):
     b = c
     print("el numero", c)
     primo(c)
-    
+    if primo(c):
+        print("es primo")
+    else:
+        print("no es primo")
