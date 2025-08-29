@@ -2,15 +2,19 @@ class Nodo:
     def __init__(self, dato):
         self.dato = dato
         self.siguiente = None
+        self.anterior = None
 
-class pilaEnlazada:
+class pilaDoblementeEnlazada:
     def __init__(self):
         self.tope = None
         self.tamaño = 0
 
     def push(self, dato):
         nuevo = Nodo(dato)
-        nuevo.siguiente = self.tope
+        if self.tope:
+            nuevo.siguiente = self.tope
+            self.tope.anterior = nuevo
+
         self.tope = nuevo
         self.tamaño += 1
 
@@ -20,7 +24,7 @@ class pilaEnlazada:
         while actual:
             elementos.append(str(actual.dato))
             actual = actual.siguiente
-        return " --> ".join(elementos)
+        return " <-- ".join(elementos)
 
 # Ejemplo de uso
 pila = pilaEnlazada()
