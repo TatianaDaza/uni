@@ -42,7 +42,9 @@ class pilaDoblementeEnlazadaCircular:
 
 
     def buscar(self,dato):
-        if 
+        actual = self.frente
+        while actual != self.ultimo:
+            actual.dato = dato
 
 
     def eliminar_front(self):
@@ -143,3 +145,6 @@ print("Pila después de eliminar el primer y sgundo elemento:", pila)
 pila.eliminar_back()
 pila.eliminar_back()
 print("Pila después de eliminar el último y pen ultimo elemento:", pila)
+
+pila.buscar(25)
+print("la pila despues de buscar 25 es",pila)
