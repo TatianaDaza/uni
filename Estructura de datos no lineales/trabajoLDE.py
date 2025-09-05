@@ -52,16 +52,16 @@ class pilaDoblementeEnlazadaCircular:
                 cont += 1
             print("No encontrado")
 
-   # def buscar(self,dato):
-      #  actual = self.frente
-      #  cont =1
-       # while self.tamaño >= cont:
-         #   if actual.dato == dato:
-          #      print("Encontrado en la posicion",cont)
-         #       break
-         #   else:
-           # actual = actual.siguiente
-          #  cont+=1*/
+    # def buscar(self,dato):
+        #  actual = self.frente
+        #  cont =1
+        # while self.tamaño >= cont:
+            #   if actual.dato == dato:
+            #      print("Encontrado en la posicion",cont)
+            #       break
+            #   else:
+            # actual = actual.siguiente
+            #  cont+=1*/
 
 
     def eliminar_front(self):
