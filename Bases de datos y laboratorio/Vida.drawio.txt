@@ -1,0 +1,615 @@
+<mxfile host="app.diagrams.net" agent="Claude" version="24.7.17">
+  <diagram name="Modelo ER Sistema Médico" id="er-medical-system">
+    <mxGraphModel dx="2400" dy="1800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="2339" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- ENTIDADES -->
+        
+        <!-- Usuarios -->
+        <mxCell id="usuarios-entity" value="USUARIOS" style="whiteSpace=wrap;html=1;align=center;fillColor=#1f497d;fontColor=#ffffff;strokeColor=#000000;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="400" y="200" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Roles -->
+        <mxCell id="roles-entity" value="ROLES" style="whiteSpace=wrap;html=1;align=center;fillColor=#1f497d;fontColor=#ffffff;strokeColor=#000000;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="100" y="80" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Pacientes -->
+        <mxCell id="pacientes-entity" value="PACIENTES" style="whiteSpace=wrap;html=1;align=center;fillColor=#1f497d;fontColor=#ffffff;strokeColor=#000000;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="200" y="400" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Médicos -->
+        <mxCell id="medicos-entity" value="MEDICOS" style="whiteSpace=wrap;html=1;align=center;fillColor=#1f497d;fontColor=#ffffff;strokeColor=#000000;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="600" y="400" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Especialidades -->
+        <mxCell id="especialidades-entity" value="ESPECIALIDADES" style="whiteSpace=wrap;html=1;align=center;fillColor=#1f497d;fontColor=#ffffff;strokeColor=#000000;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="900" y="300" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Consultorios -->
+        <mxCell id="consultorios-entity" value="CONSULTORIOS" style="whiteSpace=wrap;html=1;align=center;fillColor=#1f497d;fontColor=#ffffff;strokeColor=#000000;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="400" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Estados Cita -->
+        <mxCell id="estados-entity" value="ESTADOS_CITA" style="whiteSpace=wrap;html=1;align=center;fillColor=#1f497d;fontColor=#ffffff;strokeColor=#000000;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="800" y="700" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Citas -->
+        <mxCell id="citas-entity" value="CITAS" style="whiteSpace=wrap;html=1;align=center;fillColor=#1f497d;fontColor=#ffffff;strokeColor=#000000;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="500" y="600" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Historiales Médicos -->
+        <mxCell id="historiales-entity" value="HISTORIALES_MEDICOS" style="whiteSpace=wrap;html=1;align=center;fillColor=#1f497d;fontColor=#ffffff;strokeColor=#000000;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="200" y="800" width="150" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Calificaciones -->
+        <mxCell id="calificaciones-entity" value="CALIFICACIONES" style="whiteSpace=wrap;html=1;align=center;fillColor=#1f497d;fontColor=#ffffff;strokeColor=#000000;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="700" y="900" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Horarios Atención -->
+        <mxCell id="horarios-entity" value="HORARIOS_ATENCION" style="whiteSpace=wrap;html=1;align=center;fillColor=#1f497d;fontColor=#ffffff;strokeColor=#000000;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="900" y="500" width="150" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Notificaciones -->
+        <mxCell id="notificaciones-entity" value="NOTIFICACIONES" style="whiteSpace=wrap;html=1;align=center;fillColor=#1f497d;fontColor=#ffffff;strokeColor=#000000;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="100" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- ATRIBUTOS PRINCIPALES -->
+        
+        <!-- Usuarios atributos -->
+        <mxCell id="usuarios-id" value="id (PK)" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" vertex="1" parent="1">
+          <mxGeometry x="300" y="120" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="usuarios-email" value="email" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="400" y="120" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="usuarios-nombre" value="nombre" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="500" y="120" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="usuarios-apellidos" value="apellidos" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="300" y="280" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="usuarios-telefono" value="telefono" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="400" y="280" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="usuarios-documento" value="documento_identidad" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="500" y="280" width="120" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Roles atributos -->
+        <mxCell id="roles-id" value="id (PK)" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" vertex="1" parent="1">
+          <mxGeometry x="50" y="20" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="roles-nombre" value="nombre" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="150" y="20" width="80" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Pacientes atributos -->
+        <mxCell id="pacientes-id" value="id (PK)" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" vertex="1" parent="1">
+          <mxGeometry x="80" y="350" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pacientes-tipo-sangre" value="tipo_sangre" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="120" y="460" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pacientes-alergias" value="alergias" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="220" y="480" width="80" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Médicos atributos -->
+        <mxCell id="medicos-id" value="id (PK)" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" vertex="1" parent="1">
+          <mxGeometry x="500" y="350" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="medicos-licencia" value="numero_licencia" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="620" y="350" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="medicos-universidad" value="universidad" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="740" y="350" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="medicos-experiencia" value="anos_experiencia" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="550" y="480" width="120" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Especialidades atributos -->
+        <mxCell id="especialidades-id" value="id (PK)" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" vertex="1" parent="1">
+          <mxGeometry x="840" y="250" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="especialidades-nombre" value="nombre" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="940" y="250" width="80" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Citas atributos -->
+        <mxCell id="citas-id" value="id (PK)" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" vertex="1" parent="1">
+          <mxGeometry x="400" y="550" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="citas-fecha" value="fecha" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="500" y="550" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="citas-hora" value="hora_inicio" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="600" y="550" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="citas-motivo" value="motivo_consulta" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="400" y="670" width="120" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- RELACIONES -->
+        
+        <!-- Usuario-Rol -->
+        <mxCell id="rel-usuario-rol" value="PERTENECE" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="250" y="140" width="100" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Usuario-Paciente -->
+        <mxCell id="rel-usuario-paciente" value="ES" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="300" y="300" width="80" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Usuario-Médico -->
+        <mxCell id="rel-usuario-medico" value="ES" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="500" y="300" width="80" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Médico-Especialidad -->
+        <mxCell id="rel-medico-especialidad" value="TIENE" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="750" y="350" width="80" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Paciente-Cita -->
+        <mxCell id="rel-paciente-cita" value="AGENDA" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="350" y="500" width="100" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Médico-Cita -->
+        <mxCell id="rel-medico-cita" value="ATIENDE" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="590" y="500" width="100" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Consultorio-Cita -->
+        <mxCell id="rel-consultorio-cita" value="UBICADA_EN" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="850" y="600" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Estado-Cita -->
+        <mxCell id="rel-estado-cita" value="DEFINE" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="650" y="650" width="100" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Paciente-Historial -->
+        <mxCell id="rel-paciente-historial" value="POSEE" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="200" y="650" width="100" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Cita-Calificacion -->
+        <mxCell id="rel-cita-calificacion" value="RECIBE" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="590" y="750" width="100" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Médico-Horario -->
+        <mxCell id="rel-medico-horario" value="DEFINE" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="750" y="450" width="100" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Usuario-Notificación -->
+        <mxCell id="rel-usuario-notificacion" value="RECIBE" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="750" y="150" width="100" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- CONEXIONES -->
+        
+        <!-- Usuarios-Roles -->
+        <mxCell id="conn-usuarios-roles1" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="usuarios-entity" target="rel-usuario-rol">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-usuarios-roles2" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="roles-entity" target="rel-usuario-rol">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Usuarios-Pacientes -->
+        <mxCell id="conn-usuarios-pacientes1" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="usuarios-entity" target="rel-usuario-paciente">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-usuarios-pacientes2" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="pacientes-entity" target="rel-usuario-paciente">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Usuarios-Médicos -->
+        <mxCell id="conn-usuarios-medicos1" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="usuarios-entity" target="rel-usuario-medico">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-usuarios-medicos2" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="medicos-entity" target="rel-usuario-medico">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Médicos-Especialidades -->
+        <mxCell id="conn-medicos-especialidades1" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="medicos-entity" target="rel-medico-especialidad">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-medicos-especialidades2" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="especialidades-entity" target="rel-medico-especialidad">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Pacientes-Citas -->
+        <mxCell id="conn-pacientes-citas1" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="pacientes-entity" target="rel-paciente-cita">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-pacientes-citas2" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="citas-entity" target="rel-paciente-cita">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Médicos-Citas -->
+        <mxCell id="conn-medicos-citas1" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="medicos-entity" target="rel-medico-cita">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-medicos-citas2" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="citas-entity" target="rel-medico-cita">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Consultorios-Citas -->
+        <mxCell id="conn-consultorios-citas1" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="consultorios-entity" target="rel-consultorio-cita">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-consultorios-citas2" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="citas-entity" target="rel-consultorio-cita">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Estados-Citas -->
+        <mxCell id="conn-estados-citas1" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="estados-entity" target="rel-estado-cita">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-estados-citas2" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="citas-entity" target="rel-estado-cita">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Pacientes-Historiales -->
+        <mxCell id="conn-pacientes-historiales1" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="pacientes-entity" target="rel-paciente-historial">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-pacientes-historiales2" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="historiales-entity" target="rel-paciente-historial">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Citas-Calificaciones -->
+        <mxCell id="conn-citas-calificaciones1" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="citas-entity" target="rel-cita-calificacion">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-citas-calificaciones2" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="calificaciones-entity" target="rel-cita-calificacion">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Médicos-Horarios -->
+        <mxCell id="conn-medicos-horarios1" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="medicos-entity" target="rel-medico-horario">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-medicos-horarios2" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="horarios-entity" target="rel-medico-horario">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Usuarios-Notificaciones -->
+        <mxCell id="conn-usuarios-notificaciones1" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="usuarios-entity" target="rel-usuario-notificacion">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-usuarios-notificaciones2" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="notificaciones-entity" target="rel-usuario-notificacion">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- CONEXIONES ATRIBUTOS -->
+        
+        <!-- Usuarios atributos -->
+        <mxCell id="conn-usuarios-id" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="usuarios-entity" target="usuarios-id">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-usuarios-email" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="usuarios-entity" target="usuarios-email">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-usuarios-nombre" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="usuarios-entity" target="usuarios-nombre">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-usuarios-apellidos" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="usuarios-entity" target="usuarios-apellidos">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-usuarios-telefono" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="usuarios-entity" target="usuarios-telefono">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-usuarios-documento" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="usuarios-entity" target="usuarios-documento">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Roles atributos -->
+        <mxCell id="conn-roles-id" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="roles-entity" target="roles-id">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-roles-nombre" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="roles-entity" target="roles-nombre">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Pacientes atributos -->
+        <mxCell id="conn-pacientes-id" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="pacientes-entity" target="pacientes-id">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-pacientes-sangre" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="pacientes-entity" target="pacientes-tipo-sangre">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-pacientes-alergias" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="pacientes-entity" target="pacientes-alergias">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Médicos atributos -->
+        <mxCell id="conn-medicos-id" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="medicos-entity" target="medicos-id">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-medicos-licencia" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="medicos-entity" target="medicos-licencia">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-medicos-universidad" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="medicos-entity" target="medicos-universidad">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-medicos-experiencia" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="medicos-entity" target="medicos-experiencia">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Especialidades atributos -->
+        <mxCell id="conn-especialidades-id" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="especialidades-entity" target="especialidades-id">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-especialidades-nombre" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="especialidades-entity" target="especialidades-nombre">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Citas atributos -->
+        <mxCell id="conn-citas-id" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="citas-entity" target="citas-id">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-citas-fecha" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="citas-entity" target="citas-fecha">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-citas-hora" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="citas-entity" target="citas-hora">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-citas-motivo" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="citas-entity" target="citas-motivo">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- CARDINALIDADES -->
+        
+        <!-- Usuario-Rol (N:1) -->
+        <mxCell id="card-usuario-rol1" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="160" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="card-usuario-rol2" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="130" width="30" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Usuario-Paciente (1:1) -->
+        <mxCell id="card-usuario-paciente1" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="270" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="card-usuario-paciente2" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="370" width="30" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Usuario-Médico (1:1) -->
+        <mxCell id="card-usuario-medico1" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="270" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="card-usuario-medico2" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="370" width="30" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Médico-Especialidad (N:1) -->
+        <mxCell id="card-medico-especialidad1" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="380" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="card-medico-especialidad2" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="870" y="330" width="30" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Paciente-Cita (1:N) -->
+        <mxCell id="card-paciente-cita1" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="470" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="card-paciente-cita2" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="570" width="30" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Médico-Cita (1:N) -->
+        <mxCell id="card-medico-cita1" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="470" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="card-medico-cita2" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="570" width="30" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Consultorio-Cita (1:N) -->
+        <mxCell id="card-consultorio-cita1" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1170" y="440" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="card-consultorio-cita2" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="620" width="30" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Estado-Cita (1:N) -->
+        <mxCell id="card-estado-cita1" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="770" y="710" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="card-estado-cita2" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="630" width="30" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Paciente-Historial (1:N) -->
+        <mxCell id="card-paciente-historial1" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="580" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="card-paciente-historial2" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="770" width="30" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Cita-Calificación (1:1) -->
+        <mxCell id="card-cita-calificacion1" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="720" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="card-cita-calificacion2" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="870" width="30" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Médico-Horario (1:N) -->
+        <mxCell id="card-medico-horario1" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="430" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="card-medico-horario2" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="870" y="500" width="30" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Usuario-Notificación (1:N) -->
+        <mxCell id="card-usuario-notificacion1" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="180" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="card-usuario-notificacion2" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="130" width="30" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- ATRIBUTOS ADICIONALES -->
+        
+        <!-- Consultorios atributos -->
+        <mxCell id="consultorios-id" value="id (PK)" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="350" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="consultorios-nombre" value="nombre" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1250" y="350" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="consultorios-ubicacion" value="ubicacion" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="480" width="80" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Estados Cita atributos -->
+        <mxCell id="estados-id" value="id (PK)" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" vertex="1" parent="1">
+          <mxGeometry x="740" y="750" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="estados-nombre" value="nombre" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="840" y="750" width="80" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Historiales atributos -->
+        <mxCell id="historiales-id" value="id (PK)" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" vertex="1" parent="1">
+          <mxGeometry x="100" y="820" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="historiales-fecha" value="fecha" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="200" y="880" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="historiales-diagnostico" value="diagnostico" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="300" y="860" width="90" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Calificaciones atributos -->
+        <mxCell id="calificaciones-id" value="id (PK)" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" vertex="1" parent="1">
+          <mxGeometry x="640" y="950" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="calificaciones-valor" value="calificacion" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="740" y="950" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="calificaciones-comentario" value="comentario" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="850" y="930" width="90" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Horarios atributos -->
+        <mxCell id="horarios-id" value="id (PK)" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" vertex="1" parent="1">
+          <mxGeometry x="900" y="450" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="horarios-dia" value="dia_semana" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="450" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="horarios-inicio" value="hora_inicio" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="950" y="560" width="90" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Notificaciones atributos -->
+        <mxCell id="notificaciones-id" value="id (PK)" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="50" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="notificaciones-titulo" value="titulo" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="50" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="notificaciones-mensaje" value="mensaje" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="140" width="80" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- CONEXIONES ATRIBUTOS ADICIONALES -->
+        
+        <!-- Consultorios conexiones -->
+        <mxCell id="conn-consultorios-id" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="consultorios-entity" target="consultorios-id">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-consultorios-nombre" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="consultorios-entity" target="consultorios-nombre">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-consultorios-ubicacion" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="consultorios-entity" target="consultorios-ubicacion">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Estados conexiones -->
+        <mxCell id="conn-estados-id" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="estados-entity" target="estados-id">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-estados-nombre" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="estados-entity" target="estados-nombre">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Historiales conexiones -->
+        <mxCell id="conn-historiales-id" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="historiales-entity" target="historiales-id">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-historiales-fecha" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="historiales-entity" target="historiales-fecha">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-historiales-diagnostico" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="historiales-entity" target="historiales-diagnostico">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Calificaciones conexiones -->
+        <mxCell id="conn-calificaciones-id" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="calificaciones-entity" target="calificaciones-id">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-calificaciones-valor" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="calificaciones-entity" target="calificaciones-valor">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-calificaciones-comentario" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="calificaciones-entity" target="calificaciones-comentario">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Horarios conexiones -->
+        <mxCell id="conn-horarios-id" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="horarios-entity" target="horarios-id">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-horarios-dia" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="horarios-entity" target="horarios-dia">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-horarios-inicio" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="horarios-entity" target="horarios-inicio">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Notificaciones conexiones -->
+        <mxCell id="conn-notificaciones-id" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="notificaciones-entity" target="notificaciones-id">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-notificaciones-titulo" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="notificaciones-entity" target="notificaciones-titulo">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-notificaciones-mensaje" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="notificaciones-entity" target="notificaciones-mensaje">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
