@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0" version="28.2.0">
   <diagram id="-tEnNXmAmZ19QA3czjL4" name="Página-1">
-    <mxGraphModel dx="3609" dy="2241" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2336" pageHeight="1654" math="0" shadow="0">
+    <mxGraphModel dx="7428" dy="4002" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2336" pageHeight="1654" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -65,7 +65,7 @@
           <mxGeometry x="-137" y="80" width="1320" height="640" as="geometry" />
         </mxCell>
         <mxCell id="medical_zone_title" value="ACTORES MÉDICOS" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=18;fontColor=#059669;" parent="1" vertex="1">
-          <mxGeometry x="393" y="100" width="200" height="30" as="geometry" />
+          <mxGeometry x="393" y="100" width="277" height="30" as="geometry" />
         </mxCell>
         <mxCell id="especialidades" value="🔬 ESPECIALIDADES" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#10b981;strokeColor=#059669;fontColor=#ffffff;fontStyle=1;fontSize=16;shadow=1;" parent="1" vertex="1">
           <mxGeometry x="158" y="190" width="180" height="80" as="geometry" />
@@ -134,7 +134,7 @@
           <mxGeometry x="-1020" y="780" width="763" height="400" as="geometry" />
         </mxCell>
         <mxCell id="operational_zone_title" value="GESTIÓN OPERACIONAL" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=18;fontColor=#2563eb;" parent="1" vertex="1">
-          <mxGeometry x="-667" y="790" width="220" height="30" as="geometry" />
+          <mxGeometry x="-860" y="790" width="413" height="30" as="geometry" />
         </mxCell>
         <mxCell id="consultorios" value="🏢 CONSULTORIOS" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#3b82f6;strokeColor=#2563eb;fontColor=#ffffff;fontStyle=1;fontSize=16;shadow=1;" parent="1" vertex="1">
           <mxGeometry x="-912" y="960" width="180" height="80" as="geometry" />
@@ -170,7 +170,7 @@
           <mxGeometry x="-187" y="780" width="1637" height="890" as="geometry" />
         </mxCell>
         <mxCell id="transaction_zone_title" value="GESTIÓN TRANSACCIONAL Y OPERATIVA" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=18;fontColor=#d97706;" parent="1" vertex="1">
-          <mxGeometry x="413" y="790" width="300" height="30" as="geometry" />
+          <mxGeometry x="120" y="790" width="1120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="citas" value="📅 CITAS" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f59e0b;strokeColor=#d97706;fontColor=#ffffff;fontStyle=1;fontSize=16;shadow=1;" parent="1" vertex="1">
           <mxGeometry x="123" y="970" width="160" height="80" as="geometry" />
