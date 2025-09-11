@@ -220,6 +220,7 @@
     </mxCell>
     <mxCell id="historiales_frecuencia" value="frecuencia_cardiaca" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
       <mxGeometry x="410" y="1180" width="120" height="40" as="geometry" />
+    </mxCell>
     <mxCell id="line63" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="citas" target="citas_id"><mxGeometry relative="1" as="geometry" /></mxCell>
     <mxCell id="line64" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="citas" target="citas_fecha"><mxGeometry relative="1" as="geometry" /></mxCell>
     <mxCell id="line65" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="citas" target="citas_hora_inicio"><mxGeometry relative="1" as="geometry" /></mxCell>
@@ -234,9 +235,7 @@
     <mxCell id="line87" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="horarios_atencion" target="horario_dia"><mxGeometry relative="1" as="geometry" /></mxCell>
     <mxCell id="line88" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="horarios_atencion" target="horario_hora_inicio"><mxGeometry relative="1" as="geometry" /></mxCell>
     <mxCell id="line89" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="horarios_atencion" target="horario_hora_fin"><mxGeometry relative="1" as="geometry" /></mxCell>
-    <mxCell id="line90" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="horarios_atencion" target="horario_consultorio"><mxGeometry relative="1" as="geometry" /></mxCell>
-      </mxGeometry>
-    </mxCell>
+  <mxCell id="line90" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="horarios_atencion" target="horario_consultorio"><mxGeometry relative="1" as="geometry" /></mxCell>
     <mxCell id="line2" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="rel_usuarios_roles" target="roles">
       <mxGeometry width="50" height="50" relative="1" as="geometry">
         <mxPoint x="260" y="230" as="sourcePoint" />
