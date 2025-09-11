@@ -300,7 +300,6 @@
   <mxCell id="line14" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="usuarios" target="usuarios_avatar"><mxGeometry relative="1" as="geometry" /></mxCell>
   <mxCell id="line15" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="usuarios" target="usuarios_created_at"><mxGeometry relative="1" as="geometry" /></mxCell>
   <mxCell id="line16" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="usuarios" target="usuarios_updated_at"><mxGeometry relative="1" as="geometry" /></mxCell>
-    </mxCell>
     <mxCell id="line12" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="rel_citas_medicos" target="medicos">
       <mxGeometry width="50" height="50" relative="1" as="geometry">
         <mxPoint x="850" y="650" as="sourcePoint" />
