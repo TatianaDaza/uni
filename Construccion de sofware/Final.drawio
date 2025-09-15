@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2024-09-14T12:00:00.000Z" agent="Claude" etag="UML-Creational-Patterns-Improved" version="21.6.5" type="device">
+  <diagram name="Patrones Creacionales Mejorado" id="creational-patterns-improved">
+    <mxGraphModel dx="2400" dy="1400" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2000" pageHeight="2800" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- BACKGROUND GRADIENT -->
+        <mxCell id="background" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8f9fa;strokeColor=none;gradientColor=#e9ecef;gradientDirection=south;" vertex="1" parent="1">
+          <mxGeometry width="2000" height="2800" as="geometry" />
+        </mxCell>
+        
+        <!-- TÍTULO PRINCIPAL MEJORADO -->
+        <mxCell id="main-title" value="🏗️ PATRONES CREACIONALES&lt;br&gt;Sistema de Restaurante" style="text;html=1;strokeColor=#4a90e2;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=24;fontStyle=1;strokeWidth=3;shadow=1;glass=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="20" width="1900" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- DECORATIVE LINE -->
+        <mxCell id="decorative-line" value="" style="shape=line;html=1;strokeWidth=4;strokeColor=#4a90e2;gradientColor=#7b68ee;gradientDirection=east;" vertex="1" parent="1">
+          <mxGeometry x="50" y="120" width="1900" height="10" as="geometry" />
+        </mxCell>
+
+        <!-- SECCIÓN SINGLETON MEJORADA -->
+        <mxCell id="singleton-header" value="🔒 PATRÓN SINGLETON" style="text;html=1;strokeColor=#f093fb;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=18;fontStyle=1;strokeWidth=2;shadow=1;glass=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="160" width="400" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- LoggerSingleton Mejorado -->
+        <mxCell id="logger-singleton-improved" value="&lt;div style=&quot;background: linear-gradient(45deg, #ff9a9e, #fecfef); padding: 8px; margin-bottom: 8px; border-radius: 8px; color: white; font-weight: bold; text-align: center;&quot;&gt;📝 LoggerSingleton&lt;/div&gt;&lt;hr style=&quot;border: 1px solid #e0e0e0; margin: 8px 0;&quot;&gt;&lt;div style=&quot;font-family: 'Consolas', monospace; font-size: 11px; line-height: 1.4;&quot;&gt;&lt;div style=&quot;color: #dc3545; margin: 2px 0;&quot;&gt;🔒 _instance: LoggerSingleton [static]&lt;/div&gt;&lt;div style=&quot;color: #dc3545; margin: 2px 0;&quot;&gt;🔒 _lock: threading.Lock [static]&lt;/div&gt;&lt;div style=&quot;color: #dc3545; margin: 2px 0;&quot;&gt;🔒 _logs: list&lt;/div&gt;&lt;div style=&quot;color: #dc3545; margin: 2px 0;&quot;&gt;🔒 _initialized: bool&lt;/div&gt;&lt;/div&gt;&lt;hr style=&quot;border: 1px solid #e0e0e0; margin: 8px 0;&quot;&gt;&lt;div style=&quot;font-family: 'Consolas', monospace; font-size: 11px; line-height: 1.4;&quot;&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;✅ __new__(): LoggerSingleton&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;✅ __init__()&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;✅ log(level: str, message: str, data: Dict)&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;✅ get_logs(level?: str): list&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;✅ clear_logs()&lt;/div&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;align=left;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;shadow=1;glass=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="230" width="350" height="280" as="geometry" />
+        </mxCell>
+
+        <!-- CacheSingleton Mejorado -->
+        <mxCell id="cache-singleton-improved" value="&lt;div style=&quot;background: linear-gradient(45deg, #a8edea, #fed6e3); padding: 8px; margin-bottom: 8px; border-radius: 8px; color: #333; font-weight: bold; text-align: center;&quot;&gt;💾 CacheSingleton&lt;/div&gt;&lt;hr style=&quot;border: 1px solid #e0e0e0; margin: 8px 0;&quot;&gt;&lt;div style=&quot;font-family: 'Consolas', monospace; font-size: 11px; line-height: 1.4;&quot;&gt;&lt;div style=&quot;color: #dc3545; margin: 2px 0;&quot;&gt;🔒 _instance: CacheSingleton [static]&lt;/div&gt;&lt;div style=&quot;color: #dc3545; margin: 2px 0;&quot;&gt;🔒 _lock: threading.Lock [static]&lt;/div&gt;&lt;div style=&quot;color: #dc3545; margin: 2px 0;&quot;&gt;🔒 _cache: Dict[str, Any]&lt;/div&gt;&lt;div style=&quot;color: #dc3545; margin: 2px 0;&quot;&gt;🔒 _ttl: Dict[str, float]&lt;/div&gt;&lt;div style=&quot;color: #dc3545; margin: 2px 0;&quot;&gt;🔒 _initialized: bool&lt;/div&gt;&lt;/div&gt;&lt;hr style=&quot;border: 1px solid #e0e0e0; margin: 8px 0;&quot;&gt;&lt;div style=&quot;font-family: 'Consolas', monospace; font-size: 11px; line-height: 1.4;&quot;&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;✅ __new__(): CacheSingleton&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;✅ __init__()&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;✅ set(key: str, value: Any, ttl_seconds: int)&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;✅ get(key: str): Any&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;✅ delete(key: str): bool&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;✅ clear()&lt;/div&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;align=left;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;shadow=1;glass=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="230" width="350" height="280" as="geometry" />
+        </mxCell>
+
+        <!-- NotificationSingleton Mejorado -->
+        <mxCell id="notification-singleton-improved" value="&lt;div style=&quot;background: linear-gradient(45deg, #fbc2eb, #a6c1ee); padding: 8px; margin-bottom: 8px; border-radius: 8px; color: #333; font-weight: bold; text-align: center;&quot;&gt;🔔 NotificationSingleton&lt;/div&gt;&lt;hr style=&quot;border: 1px solid #e0e0e0; margin: 8px 0;&quot;&gt;&lt;div style=&quot;font-family: 'Consolas', monospace; font-size: 11px; line-height: 1.4;&quot;&gt;&lt;div style=&quot;color: #dc3545; margin: 2px 0;&quot;&gt;🔒 _instance: NotificationSingleton [static]&lt;/div&gt;&lt;div style=&quot;color: #dc3545; margin: 2px 0;&quot;&gt;🔒 _lock: threading.Lock [static]&lt;/div&gt;&lt;div style=&quot;color: #dc3545; margin: 2px 0;&quot;&gt;🔒 _notifications: list&lt;/div&gt;&lt;div style=&quot;color: #dc3545; margin: 2px 0;&quot;&gt;🔒 _subscribers: Dict[str, list]&lt;/div&gt;&lt;div style=&quot;color: #dc3545; margin: 2px 0;&quot;&gt;🔒 _initialized: bool&lt;/div&gt;&lt;/div&gt;&lt;hr style=&quot;border: 1px solid #e0e0e0; margin: 8px 0;&quot;&gt;&lt;div style=&quot;font-family: 'Consolas', monospace; font-size: 11px; line-height: 1.4;&quot;&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;✅ __new__(): NotificationSingleton&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;✅ __init__()&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;✅ subscribe(event_type: str, callback)&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;✅ notify(event_type: str, data: Dict)&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;✅ get_notifications(event_type?: str): list&lt;/div&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;align=left;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;shadow=1;glass=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="810" y="230" width="380" height="280" as="geometry" />
+        </mxCell>
+
+        <!-- ConfigurationSingleton Mejorado -->
+        <mxCell id="config-singleton-improved" value="&lt;div style=&quot;background: linear-gradient(45deg, #f093fb, #f5576c); padding: 8px; margin-bottom: 8px; border-radius: 8px; color: white; font-weight: bold; text-align: center;&quot;&gt;⚙️ ConfigurationSingleton&lt;/div&gt;&lt;hr style=&quot;border: 1px solid #e0e0e0; margin: 8px 0;&quot;&gt;&lt;div style=&quot;font-family: 'Consolas', monospace; font-size: 11px; line-height: 1.4;&quot;&gt;&lt;div style=&quot;color: #dc3545; margin: 2px 0;&quot;&gt;🔒 _instance: ConfigurationSingleton [static]&lt;/div&gt;&lt;div style=&quot;color: #dc3545; margin: 2px 0;&quot;&gt;🔒 _lock: threading.Lock [static]&lt;/div&gt;&lt;div style=&quot;color: #dc3545; margin: 2px 0;&quot;&gt;🔒 _config: Dict[str, Any]&lt;/div&gt;&lt;div style=&quot;color: #dc3545; margin: 2px 0;&quot;&gt;🔒 _initialized: bool&lt;/div&gt;&lt;/div&gt;&lt;hr style=&quot;border: 1px solid #e0e0e0; margin: 8px 0;&quot;&gt;&lt;div style=&quot;font-family: 'Consolas', monospace; font-size: 11px; line-height: 1.4;&quot;&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;✅ __new__(): ConfigurationSingleton&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;✅ __init__()&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;✅ get(key: str, default: Any): Any&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;✅ set(key: str, value: Any)&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;✅ get_all(): Dict[str, Any]&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;✅ update(config_dict: Dict[str, Any])&lt;/div&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;align=left;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;shadow=1;glass=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="1220" y="230" width="370" height="280" as="geometry" />
+        </mxCell>
+
+        <!-- DatabaseConnectionSingleton Mejorado -->
+        <mxCell id="db-singleton-improved" value="&lt;div style=&quot;background: linear-gradient(45deg, #667eea, #764ba2); padding: 8px; margin-bottom: 8px; border-radius: 8px; color: white; font-weight: bold; text-align: center;&quot;&gt;🗄️ DatabaseConnectionSingleton&lt;/div&gt;&lt;hr style=&quot;border: 1px solid #e0e0e0; margin: 8px 0;&quot;&gt;&lt;div style=&quot;font-family: 'Consolas', monospace; font-size: 11px; line-height: 1.4;&quot;&gt;&lt;div style=&quot;color: #dc3545; margin: 2px 0;&quot;&gt;🔒 _instance: DatabaseConnectionSingleton [static]&lt;/div&gt;&lt;div style=&quot;color: #dc3545; margin: 2px 0;&quot;&gt;🔒 _lock: threading.Lock [static]&lt;/div&gt;&lt;div style=&quot;color: #dc3545; margin: 2px 0;&quot;&gt;🔒 _connection: db_connection&lt;/div&gt;&lt;div style=&quot;color: #dc3545; margin: 2px 0;&quot;&gt;🔒 _initialized: bool&lt;/div&gt;&lt;/div&gt;&lt;hr style=&quot;border: 1px solid #e0e0e0; margin: 8px 0;&quot;&gt;&lt;div style=&quot;font-family: 'Consolas', monospace; font-size: 11px; line-height: 1.4;&quot;&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;✅ __new__(): DatabaseConnectionSingleton&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;✅ __init__()&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;✅ connection: property&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;✅ health_check(): bool&lt;/div&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;align=left;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;shadow=1;glass=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="1620" y="230" width="330" height="280" as="geometry" />
+        </mxCell>
+
+        <!-- SECCIÓN FACTORY METHOD MEJORADA -->
+        <mxCell id="factory-header" value="🏭 PATRÓN FACTORY METHOD" style="text;html=1;strokeColor=#4facfe;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=18;fontStyle=1;strokeWidth=2;shadow=1;glass=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="550" width="400" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- OrderFactory Abstract Mejorado -->
+        <mxCell id="order-factory-improved" value="&lt;div style=&quot;background: linear-gradient(45deg, #4facfe, #00f2fe); padding: 8px; margin-bottom: 8px; border-radius: 8px; color: white; font-weight: bold; text-align: center; font-style: italic;&quot;&gt;🏭 &amp;lt;&amp;lt;abstract&amp;gt;&amp;gt; OrderFactory&lt;/div&gt;&lt;hr style=&quot;border: 1px solid #e0e0e0; margin: 8px 0;&quot;&gt;&lt;div style=&quot;font-family: 'Consolas', monospace; font-size: 11px; line-height: 1.4;&quot;&gt;&lt;div style=&quot;color: #fd7e14; margin: 2px 0; font-style: italic;&quot;&gt;🔶 create_order(order_data: Dict): Order [abstract]&lt;/div&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;align=left;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;glass=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="620" width="350" height="120" as="geometry" />
+        </mxCell>
+
+        <!-- DineInOrderFactory Mejorado -->
+        <mxCell id="dinein-factory-improved" value="&lt;div style=&quot;background: linear-gradient(45deg, #43e97b, #38f9d7); padding: 8px; margin-bottom: 8px; border-radius: 8px; color: white; font-weight: bold; text-align: center;&quot;&gt;🍽️ DineInOrderFactory&lt;/div&gt;&lt;hr style=&quot;border: 1px solid #e0e0e0; margin: 8px 0;&quot;&gt;&lt;div style=&quot;font-family: 'Consolas', monospace; font-size: 11px; line-height: 1.4;&quot;&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;✅ create_order(order_data: Dict): Order&lt;/div&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;align=left;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;glass=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="780" width="300" height="100" as="geometry" />
+        </mxCell>
+
+        <!-- TakeawayOrderFactory Mejorado -->
+        <mxCell id="takeaway-factory-improved" value="&lt;div style=&quot;background: linear-gradient(45deg, #fa709a, #fee140); padding: 8px; margin-bottom: 8px; border-radius: 8px; color: white; font-weight: bold; text-align: center;&quot;&gt;📦 TakeawayOrderFactory&lt;/div&gt;&lt;hr style=&quot;border: 1px solid #e0e0e0; margin: 8px 0;&quot;&gt;&lt;div style=&quot;font-family: 'Consolas', monospace; font-size: 11px; line-height: 1.4;&quot;&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;✅ create_order(order_data: Dict): Order&lt;/div&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;align=left;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;glass=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="780" width="300" height="100" as="geometry" />
+        </mxCell>
+
+        <!-- DeliveryOrderFactory Mejorado -->
+        <mxCell id="delivery-factory-improved" value="&lt;div style=&quot;background: linear-gradient(45deg, #667eea, #764ba2); padding: 8px; margin-bottom: 8px; border-radius: 8px; color: white; font-weight: bold; text-align: center;&quot;&gt;🚚 DeliveryOrderFactory&lt;/div&gt;&lt;hr style=&quot;border: 1px solid #e0e0e0; margin: 8px 0;&quot;&gt;&lt;div style=&quot;font-family: 'Consolas', monospace; font-size: 11px; line-height: 1.4;&quot;&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;✅ create_order(order_data: Dict): Order&lt;/div&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;align=left;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;glass=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="710" y="780" width="300" height="100" as="geometry" />
+        </mxCell>
+
+        <!-- OrderFactoryProducer Mejorado -->
+        <mxCell id="factory-producer-improved" value="&lt;div style=&quot;background: linear-gradient(45deg, #a8edea, #fed6e3); padding: 8px; margin-bottom: 8px; border-radius: 8px; color: #333; font-weight: bold; text-align: center;&quot;&gt;🎛️ OrderFactoryProducer&lt;/div&gt;&lt;hr style=&quot;border: 1px solid #e0e0e0; margin: 8px 0;&quot;&gt;&lt;div style=&quot;font-family: 'Consolas', monospace; font-size: 11px; line-height: 1.4;&quot;&gt;&lt;div style=&quot;color: #dc3545; margin: 2px 0;&quot;&gt;🔒 _factories: Dict [static]&lt;/div&gt;&lt;/div&gt;&lt;hr style=&quot;border: 1px solid #e0e0e0; margin: 8px 0;&quot;&gt;&lt;div style=&quot;font-family: 'Consolas', monospace; font-size: 11px; line-height: 1.4;&quot;&gt;&lt;div style=&quot;color: #6f42c1; margin: 2px 0;&quot;&gt;🌟 get_factory(order_type: str): OrderFactory [static]&lt;/div&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;align=left;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;glass=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="620" width="350" height="120" as="geometry" />
+        </mxCell>
+
+        <!-- Static Factories Row -->
+        <mxCell id="menuitem-factory-improved" value="&lt;div style=&quot;background: linear-gradient(45deg, #ff9a9e, #fecfef); padding: 8px; margin-bottom: 8px; border-radius: 8px; color: white; font-weight: bold; text-align: center;&quot;&gt;🍕 MenuItemFactory&lt;/div&gt;&lt;hr style=&quot;border: 1px solid #e0e0e0; margin: 8px 0;&quot;&gt;&lt;div style=&quot;font-family: 'Consolas', monospace; font-size: 11px; line-height: 1.4;&quot;&gt;&lt;div style=&quot;color: #6f42c1; margin: 2px 0;&quot;&gt;🌟 create_menu_item(item_data: Dict): MenuItem [static]&lt;/div&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;align=left;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;glass=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="620" width="300" height="100" as="geometry" />
+        </mxCell>
+
+        <mxCell id="customer-factory-improved" value="&lt;div style=&quot;background: linear-gradient(45deg, #fbc2eb, #a6c1ee); padding: 8px; margin-bottom: 8px; border-radius: 8px; color: #333; font-weight: bold; text-align: center;&quot;&gt;CustomerFactory&lt;/div&gt;&lt;hr style=&quot;border: 1px solid #e0e0e0; margin: 8px 0;&quot;&gt;&lt;div style=&quot;font-family: 'Consolas', monospace; font-size: 11px; line-height: 1.4;&quot;&gt;&lt;div style=&quot;color: #6f42c1; margin: 2px 0;&quot;&gt;create_customer(customer_data: Dict): Customer [static]&lt;/div&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;align=left;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;glass=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="1370" y="620" width="300" height="100" as="geometry" />
+        </mxCell>
+
+        <mxCell id="invoice-factory-improved" value="&lt;div style=&quot;background: linear-gradient(45deg, #667eea, #764ba2); padding: 8px; margin-bottom: 8px; border-radius: 8px; color: white; font-weight: bold; text-align: center;&quot;&gt;InvoiceFactory&lt;/div&gt;&lt;hr style=&quot;border: 1px solid #e0e0e0; margin: 8px 0;&quot;&gt;&lt;div style=&quot;font-family: 'Consolas', monospace; font-size: 11px; line-height: 1.4;&quot;&gt;&lt;div style=&quot;color: #6f42c1; margin: 2px 0;&quot;&gt;create_invoice(invoice_data: Dict): Invoice [static]&lt;/div&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;align=left;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;glass=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="750" width="300" height="100" as="geometry" />
+        </mxCell>
+
+        <mxCell id="payment-factory-improved" value="&lt;div style=&quot;background: linear-gradient(45deg, #43e97b, #38f9d7); padding: 8px; margin-bottom: 8px; border-radius: 8px; color: white; font-weight: bold; text-align: center;&quot;&gt;PaymentFactory&lt;/div&gt;&lt;hr style=&quot;border: 1px solid #e0e0e0; margin: 8px 0;&quot;&gt;&lt;div style=&quot;font-family: 'Consolas', monospace; font-size: 11px; line-height: 1.4;&quot;&gt;&lt;div style=&quot;color: #6f42c1; margin: 2px 0;&quot;&gt;create_payment(payment_data: Dict): Payment [static]&lt;/div&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;align=left;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;glass=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="1370" y="750" width="300" height="100" as="geometry" />
+        </mxCell>
+
+        <mxCell id="reservation-factory-improved" value="&lt;div style=&quot;background: linear-gradient(45deg, #f093fb, #f5576c); padding: 8px; margin-bottom: 8px; border-radius: 8px; color: white; font-weight: bold; text-align: center;&quot;&gt;ReservationFactory&lt;/div&gt;&lt;hr style=&quot;border: 1px solid #e0e0e0; margin: 8px 0;&quot;&gt;&lt;div style=&quot;font-family: 'Consolas', monospace; font-size: 11px; line-height: 1.4;&quot;&gt;&lt;div style=&quot;color: #6f42c1; margin: 2px 0;&quot;&gt;create_reservation(reservation_data: Dict): Reservation [static]&lt;/div&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;align=left;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;shadow=1;glass=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="1700" y="620" width="300" height="100" as="geometry" />
+        </mxCell>
+
+        <!-- SECCIÓN BUILDER MEJORADA -->
+        <mxCell id="builder-header" value="PATRÓN BUILDER" style="text;html=1;strokeColor=#43e97b;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=18;fontStyle=1;strokeWidth=2;shadow=1;glass=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="920" width="400" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- OrderBuilder Mejorado -->
+        <mxCell id="order-builder-improved" value="&lt;div style=&quot;background: linear-gradient(45deg, #43e97b, #38f9d7); padding: 8px; margin-bottom: 8px; border-radius: 8px; color: white; font-weight: bold; text-align: center;&quot;&gt;OrderBuilder&lt;/div&gt;&lt;hr style=&quot;border: 1px solid #e0e0e0; margin: 8px 0;&quot;&gt;&lt;div style=&quot;font-family: 'Consolas', monospace; font-size: 11px; line-height: 1.4;&quot;&gt;&lt;div style=&quot;color: #dc3545; margin: 2px 0;&quot;&gt;_order_data: Dict[str, Any]&lt;/div&gt;&lt;div style=&quot;color: #dc3545; margin: 2px 0;&quot;&gt;_order_items: List[Dict[str, Any]]&lt;/div&gt;&lt;/div&gt;&lt;hr style=&quot;border: 1px solid #e0e0e0; margin: 8px 0;&quot;&gt;&lt;div style=&quot;font-family: 'Consolas', monospace; font-size: 11px; line-height: 1.4;&quot;&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;set_customer(customer_id: str): OrderBuilder&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;set_table(table_id: str): OrderBuilder&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;set_order_type(order_type_id: str): OrderBuilder&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;set_status(status_id: str): OrderBuilder&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;set_special_instructions(instructions: str): OrderBuilder&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;add_order_item(...): OrderBuilder&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;calculate_totals(tax_rate: float, discount: float): OrderBuilder&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;build(): Order&lt;/div&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;align=left;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;shadow=1;glass=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="990" width="420" height="280" as="geometry" />
+        </mxCell>
+
+        <!-- MenuItemBuilder Mejorado -->
+        <mxCell id="menuitem-builder-improved" value="&lt;div style=&quot;background: linear-gradient(45deg, #fa709a, #fee140); padding: 8px; margin-bottom: 8px; border-radius: 8px; color: white; font-weight: bold; text-align: center;&quot;&gt;MenuItemBuilder&lt;/div&gt;&lt;hr style=&quot;border: 1px solid #e0e0e0; margin: 8px 0;&quot;&gt;&lt;div style=&quot;font-family: 'Consolas', monospace; font-size: 11px; line-height: 1.4;&quot;&gt;&lt;div style=&quot;color: #dc3545; margin: 2px 0;&quot;&gt;_item_data: Dict[str, Any]&lt;/div&gt;&lt;/div&gt;&lt;hr style=&quot;border: 1px solid #e0e0e0; margin: 8px 0;&quot;&gt;&lt;div style=&quot;font-family: 'Consolas', monospace; font-size: 11px; line-height: 1.4;&quot;&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;set_basic_info(name: str, description: str, price: float): MenuItemBuilder&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;set_category(category_id: str): MenuItemBuilder&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;set_pricing(cost: float): MenuItemBuilder&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;set_preparation(preparation_time: int): MenuItemBuilder&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;set_availability(is_available: bool, is_featured: bool): MenuItemBuilder&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;set_image(image_url: str): MenuItemBuilder&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;set_allergen_info(allergens: List[str]): MenuItemBuilder&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;set_nutritional_info(nutritional_data: Dict): MenuItemBuilder&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;build(): MenuItem&lt;/div&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;align=left;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;shadow=1;glass=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="990" width="480" height="280" as="geometry" />
+        </mxCell>
+
+        <!-- CustomerBuilder y InvoiceBuilder -->
+        <mxCell id="customer-builder-improved" value="&lt;div style=&quot;background: linear-gradient(45deg, #667eea, #764ba2); padding: 8px; margin-bottom: 8px; border-radius: 8px; color: white; font-weight: bold; text-align: center;&quot;&gt;CustomerBuilder&lt;/div&gt;&lt;hr style=&quot;border: 1px solid #e0e0e0; margin: 8px 0;&quot;&gt;&lt;div style=&quot;font-family: 'Consolas', monospace; font-size: 11px; line-height: 1.4;&quot;&gt;&lt;div style=&quot;color: #dc3545; margin: 2px 0;&quot;&gt;_customer_data: Dict[str, Any]&lt;/div&gt;&lt;/div&gt;&lt;hr style=&quot;border: 1px solid #e0e0e0; margin: 8px 0;&quot;&gt;&lt;div style=&quot;font-family: 'Consolas', monospace; font-size: 11px; line-height: 1.4;&quot;&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;set_personal_info(...): CustomerBuilder&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;set_address(address: str): CustomerBuilder&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;set_birth_date(birth_date: str): CustomerBuilder&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;set_allergies(allergies: List[str]): CustomerBuilder&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;set_preferences(preferences: Dict): CustomerBuilder&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;set_loyalty(loyalty_points: int, is_vip: bool): CustomerBuilder&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;build(): Customer&lt;/div&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;align=left;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;shadow=1;glass=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="990" width="380" height="220" as="geometry" />
+        </mxCell>
+
+        <mxCell id="invoice-builder-improved" value="&lt;div style=&quot;background: linear-gradient(45deg, #f093fb, #f5576c); padding: 8px; margin-bottom: 8px; border-radius: 8px; color: white; font-weight: bold; text-align: center;&quot;&gt;InvoiceBuilder&lt;/div&gt;&lt;hr style=&quot;border: 1px solid #e0e0e0; margin: 8px 0;&quot;&gt;&lt;div style=&quot;font-family: 'Consolas', monospace; font-size: 11px; line-height: 1.4;&quot;&gt;&lt;div style=&quot;color: #dc3545; margin: 2px 0;&quot;&gt;_invoice_data: Dict[str, Any]&lt;/div&gt;&lt;/div&gt;&lt;hr style=&quot;border: 1px solid #e0e0e0; margin: 8px 0;&quot;&gt;&lt;div style=&quot;font-family: 'Consolas', monospace; font-size: 11px; line-height: 1.4;&quot;&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;set_order_info(order_id: str, customer_id?: str): InvoiceBuilder&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;set_amounts(subtotal: float, tax: float, discount: float): InvoiceBuilder&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;set_status(status: str): InvoiceBuilder&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;set_invoice_number(invoice_number: str): InvoiceBuilder&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;set_created_by(created_by: str): InvoiceBuilder&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;build(): Invoice&lt;/div&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;align=left;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;shadow=1;glass=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="1420" y="990" width="430" height="220" as="geometry" />
+        </mxCell>
+
+        <!-- SECCIÓN ABSTRACT FACTORY MEJORADA -->
+        <mxCell id="abstract-factory-header" value="PATRÓN ABSTRACT FACTORY" style="text;html=1;strokeColor=#fa709a;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=18;fontStyle=1;strokeWidth=2;shadow=1;glass=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="1320" width="400" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- OrderSystemFactory Abstract Mejorado -->
+        <mxCell id="order-system-factory-improved" value="&lt;div style=&quot;background: linear-gradient(45deg, #fa709a, #fee140); padding: 8px; margin-bottom: 8px; border-radius: 8px; color: white; font-weight: bold; text-align: center; font-style: italic;&quot;&gt;&amp;lt;&amp;lt;abstract&amp;gt;&amp;gt; OrderSystemFactory&lt;/div&gt;&lt;hr style=&quot;border: 1px solid #e0e0e0; margin: 8px 0;&quot;&gt;&lt;div style=&quot;font-family: 'Consolas', monospace; font-size: 11px; line-height: 1.4;&quot;&gt;&lt;div style=&quot;color: #fd7e14; margin: 2px 0; font-style: italic;&quot;&gt;create_order(order_data: Dict): Order [abstract]&lt;/div&gt;&lt;div style=&quot;color: #fd7e14; margin: 2px 0; font-style: italic;&quot;&gt;create_order_item(item_data: Dict): OrderItem [abstract]&lt;/div&gt;&lt;div style=&quot;color: #fd7e14; margin: 2px 0; font-style: italic;&quot;&gt;create_invoice(invoice_data: Dict): Invoice [abstract]&lt;/div&gt;&lt;div style=&quot;color: #fd7e14; margin: 2px 0; font-style: italic;&quot;&gt;create_payment(payment_data: Dict): Payment [abstract]&lt;/div&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;align=left;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;glass=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="1390" width="400" height="160" as="geometry" />
+        </mxCell>
+
+        <!-- System Factories -->
+        <mxCell id="dinein-system-factory-improved" value="&lt;div style=&quot;background: linear-gradient(45deg, #43e97b, #38f9d7); padding: 8px; margin-bottom: 8px; border-radius: 8px; color: white; font-weight: bold; text-align: center;&quot;&gt;DineInSystemFactory&lt;/div&gt;&lt;hr style=&quot;border: 1px solid #e0e0e0; margin: 8px 0;&quot;&gt;&lt;div style=&quot;font-family: 'Consolas', monospace; font-size: 11px; line-height: 1.4;&quot;&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;create_order(order_data: Dict): Order&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;create_order_item(item_data: Dict): OrderItem&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;create_invoice(invoice_data: Dict): Invoice&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;create_payment(payment_data: Dict): Payment&lt;/div&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;align=left;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;glass=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="1590" width="350" height="140" as="geometry" />
+        </mxCell>
+
+        <mxCell id="takeaway-system-factory-improved" value="&lt;div style=&quot;background: linear-gradient(45deg, #667eea, #764ba2); padding: 8px; margin-bottom: 8px; border-radius: 8px; color: white; font-weight: bold; text-align: center;&quot;&gt;TakeawaySystemFactory&lt;/div&gt;&lt;hr style=&quot;border: 1px solid #e0e0e0; margin: 8px 0;&quot;&gt;&lt;div style=&quot;font-family: 'Consolas', monospace; font-size: 11px; line-height: 1.4;&quot;&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;create_order(order_data: Dict): Order&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;create_order_item(item_data: Dict): OrderItem&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;create_invoice(invoice_data: Dict): Invoice&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;create_payment(payment_data: Dict): Payment&lt;/div&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;align=left;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;glass=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="1590" width="350" height="140" as="geometry" />
+        </mxCell>
+
+        <mxCell id="delivery-system-factory-improved" value="&lt;div style=&quot;background: linear-gradient(45deg, #f093fb, #f5576c); padding: 8px; margin-bottom: 8px; border-radius: 8px; color: white; font-weight: bold; text-align: center;&quot;&gt;DeliverySystemFactory&lt;/div&gt;&lt;hr style=&quot;border: 1px solid #e0e0e0; margin: 8px 0;&quot;&gt;&lt;div style=&quot;font-family: 'Consolas', monospace; font-size: 11px; line-height: 1.4;&quot;&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;create_order(order_data: Dict): Order&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;create_order_item(item_data: Dict): OrderItem&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;create_invoice(invoice_data: Dict): Invoice&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;create_payment(payment_data: Dict): Payment&lt;/div&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;align=left;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;glass=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="810" y="1590" width="350" height="140" as="geometry" />
+        </mxCell>
+
+        <!-- ReservationSystemFactory Abstract -->
+        <mxCell id="reservation-system-factory-improved" value="&lt;div style=&quot;background: linear-gradient(45deg, #a8edea, #fed6e3); padding: 8px; margin-bottom: 8px; border-radius: 8px; color: #333; font-weight: bold; text-align: center; font-style: italic;&quot;&gt;&amp;lt;&amp;lt;abstract&amp;gt;&amp;gt; ReservationSystemFactory&lt;/div&gt;&lt;hr style=&quot;border: 1px solid #e0e0e0; margin: 8px 0;&quot;&gt;&lt;div style=&quot;font-family: 'Consolas', monospace; font-size: 11px; line-height: 1.4;&quot;&gt;&lt;div style=&quot;color: #fd7e14; margin: 2px 0; font-style: italic;&quot;&gt;create_reservation(reservation_data: Dict): Reservation [abstract]&lt;/div&gt;&lt;div style=&quot;color: #fd7e14; margin: 2px 0; font-style: italic;&quot;&gt;create_customer_for_reservation(customer_data: Dict): Customer [abstract]&lt;/div&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;align=left;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;glass=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="1390" width="450" height="120" as="geometry" />
+        </mxCell>
+
+        <!-- Reservation Factories -->
+        <mxCell id="standard-reservation-factory-improved" value="&lt;div style=&quot;background: linear-gradient(45deg, #ff9a9e, #fecfef); padding: 8px; margin-bottom: 8px; border-radius: 8px; color: white; font-weight: bold; text-align: center;&quot;&gt;StandardReservationFactory&lt;/div&gt;&lt;hr style=&quot;border: 1px solid #e0e0e0; margin: 8px 0;&quot;&gt;&lt;div style=&quot;font-family: 'Consolas', monospace; font-size: 11px; line-height: 1.4;&quot;&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;create_reservation(reservation_data: Dict): Reservation&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;create_customer_for_reservation(customer_data: Dict): Customer&lt;/div&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;align=left;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;glass=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="1590" width="400" height="100" as="geometry" />
+        </mxCell>
+
+        <mxCell id="vip-reservation-factory-improved" value="&lt;div style=&quot;background: linear-gradient(45deg, #fbc2eb, #a6c1ee); padding: 8px; margin-bottom: 8px; border-radius: 8px; color: #333; font-weight: bold; text-align: center;&quot;&gt;VIPReservationFactory&lt;/div&gt;&lt;hr style=&quot;border: 1px solid #e0e0e0; margin: 8px 0;&quot;&gt;&lt;div style=&quot;font-family: 'Consolas', monospace; font-size: 11px; line-height: 1.4;&quot;&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;create_reservation(reservation_data: Dict): Reservation&lt;/div&gt;&lt;div style=&quot;color: #28a745; margin: 2px 0;&quot;&gt;create_customer_for_reservation(customer_data: Dict): Customer&lt;/div&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;align=left;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;glass=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="1630" y="1590" width="350" height="100" as="geometry" />
+        </mxCell>
+
+        <!-- FactoryProducer -->
+        <mxCell id="abstract-factory-producer-improved" value="&lt;div style=&quot;background: linear-gradient(45deg, #667eea, #764ba2); padding: 8px; margin-bottom: 8px; border-radius: 8px; color: white; font-weight: bold; text-align: center;&quot;&gt;FactoryProducer&lt;/div&gt;&lt;hr style=&quot;border: 1px solid #e0e0e0; margin: 8px 0;&quot;&gt;&lt;div style=&quot;font-family: 'Consolas', monospace; font-size: 11px; line-height: 1.4;&quot;&gt;&lt;div style=&quot;color: #6f42c1; margin: 2px 0;&quot;&gt;get_order_system_factory(system_type: str): OrderSystemFactory [static]&lt;/div&gt;&lt;div style=&quot;color: #6f42c1; margin: 2px 0;&quot;&gt;get_reservation_system_factory(customer_type: str): ReservationSystemFactory [static]&lt;/div&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;align=left;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;shadow=1;glass=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="1390" width="550" height="100" as="geometry" />
+        </mxCell>
+
+        <!-- ENTIDADES DEL DOMINIO MEJORADAS -->
+        <mxCell id="entities-header" value="ENTIDADES DEL DOMINIO" style="text;html=1;strokeColor=#a8edea;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=18;fontStyle=1;strokeWidth=2;shadow=1;glass=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="1780" width="400" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Order Entity Mejorado -->
+        <mxCell id="order-entity-improved" value="&lt;div style=&quot;background: linear-gradient(45deg, #a8edea, #fed6e3); padding: 8px; margin-bottom: 8px; border-radius: 8px; color: #333; font-weight: bold; text-align: center;&quot;&gt;Order&lt;/div&gt;&lt;hr style=&quot;border: 1px solid #e0e0e0; margin: 8px 0;&quot;&gt;&lt;div style=&quot;font-family: 'Consolas', monospace; font-size: 11px; line-height: 1.4;&quot;&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;id: str&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;order_number: str&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;customer_id: str&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;table_id: str&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;order_type_id: str&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;status_id: str&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;subtotal: float&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;tax_amount: float&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;discount_amount: float&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;total_amount: float&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;special_instructions: str&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;created_at: datetime&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;updated_at: datetime&lt;/div&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;align=left;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;glass=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="1850" width="220" height="300" as="geometry" />
+        </mxCell>
+
+        <!-- OrderItem Entity -->
+        <mxCell id="orderitem-entity-improved" value="&lt;div style=&quot;background: linear-gradient(45deg, #ff9a9e, #fecfef); padding: 8px; margin-bottom: 8px; border-radius: 8px; color: white; font-weight: bold; text-align: center;&quot;&gt;OrderItem&lt;/div&gt;&lt;hr style=&quot;border: 1px solid #e0e0e0; margin: 8px 0;&quot;&gt;&lt;div style=&quot;font-family: 'Consolas', monospace; font-size: 11px; line-height: 1.4;&quot;&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;id: str&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;order_id: str&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;menu_item_id: str&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;quantity: int&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;unit_price: float&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;total_price: float&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;customizations: List&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;special_instructions: str&lt;/div&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;align=left;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;glass=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="1850" width="200" height="200" as="geometry" />
+        </mxCell>
+
+        <!-- MenuItem Entity -->
+        <mxCell id="menuitem-entity-improved" value="&lt;div style=&quot;background: linear-gradient(45deg, #43e97b, #38f9d7); padding: 8px; margin-bottom: 8px; border-radius: 8px; color: white; font-weight: bold; text-align: center;&quot;&gt;MenuItem&lt;/div&gt;&lt;hr style=&quot;border: 1px solid #e0e0e0; margin: 8px 0;&quot;&gt;&lt;div style=&quot;font-family: 'Consolas', monospace; font-size: 11px; line-height: 1.4;&quot;&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;id: str&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;name: str&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;description: str&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;price: float&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;cost: float&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;category_id: str&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;preparation_time: int&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;is_available: bool&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;is_featured: bool&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;image_url: str&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;allergen_info: List[str]&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;nutritional_info: Dict&lt;/div&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;align=left;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;glass=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="1850" width="200" height="280" as="geometry" />
+        </mxCell>
+
+        <!-- Customer Entity -->
+        <mxCell id="customer-entity-improved" value="&lt;div style=&quot;background: linear-gradient(45deg, #667eea, #764ba2); padding: 8px; margin-bottom: 8px; border-radius: 8px; color: white; font-weight: bold; text-align: center;&quot;&gt;Customer&lt;/div&gt;&lt;hr style=&quot;border: 1px solid #e0e0e0; margin: 8px 0;&quot;&gt;&lt;div style=&quot;font-family: 'Consolas', monospace; font-size: 11px; line-height: 1.4;&quot;&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;id: str&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;first_name: str&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;last_name: str&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;email: str&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;phone: str&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;address: str&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;birth_date: str&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;allergies: List[str]&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;preferences: Dict&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;loyalty_points: int&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;is_vip: bool&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;created_at: datetime&lt;/div&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;align=left;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;glass=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="1850" width="180" height="280" as="geometry" />
+        </mxCell>
+
+        <!-- Invoice Entity -->
+        <mxCell id="invoice-entity-improved" value="&lt;div style=&quot;background: linear-gradient(45deg, #f093fb, #f5576c); padding: 8px; margin-bottom: 8px; border-radius: 8px; color: white; font-weight: bold; text-align: center;&quot;&gt;Invoice&lt;/div&gt;&lt;hr style=&quot;border: 1px solid #e0e0e0; margin: 8px 0;&quot;&gt;&lt;div style=&quot;font-family: 'Consolas', monospace; font-size: 11px; line-height: 1.4;&quot;&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;id: str&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;invoice_number: str&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;order_id: str&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;customer_id: str&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;subtotal: float&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;tax_amount: float&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;discount_amount: float&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;total_amount: float&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;status: str&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;created_by: str&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;created_at: datetime&lt;/div&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;align=left;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;glass=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="970" y="1850" width="180" height="260" as="geometry" />
+        </mxCell>
+
+        <!-- Payment Entity -->
+        <mxCell id="payment-entity-improved" value="&lt;div style=&quot;background: linear-gradient(45deg, #fa709a, #fee140); padding: 8px; margin-bottom: 8px; border-radius: 8px; color: white; font-weight: bold; text-align: center;&quot;&gt;Payment&lt;/div&gt;&lt;hr style=&quot;border: 1px solid #e0e0e0; margin: 8px 0;&quot;&gt;&lt;div style=&quot;font-family: 'Consolas', monospace; font-size: 11px; line-height: 1.4;&quot;&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;id: str&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;invoice_id: str&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;amount: float&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;payment_method: str&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;status: str&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;transaction_id: str&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;created_at: datetime&lt;/div&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;align=left;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;glass=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="1850" width="180" height="180" as="geometry" />
+        </mxCell>
+
+        <!-- Reservation Entity -->
+        <mxCell id="reservation-entity-improved" value="&lt;div style=&quot;background: linear-gradient(45deg, #fbc2eb, #a6c1ee); padding: 8px; margin-bottom: 8px; border-radius: 8px; color: #333; font-weight: bold; text-align: center;&quot;&gt;Reservation&lt;/div&gt;&lt;hr style=&quot;border: 1px solid #e0e0e0; margin: 8px 0;&quot;&gt;&lt;div style=&quot;font-family: 'Consolas', monospace; font-size: 11px; line-height: 1.4;&quot;&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;id: str&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;customer_id: str&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;table_id: str&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;reservation_date: datetime&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;party_size: int&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;duration: int&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;status: str&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;special_requests: str&lt;/div&gt;&lt;div style=&quot;color: #0066cc; margin: 2px 0;&quot;&gt;created_at: datetime&lt;/div&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;align=left;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;shadow=1;glass=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="1390" y="1850" width="200" height="220" as="geometry" />
+        </mxCell>
+
+        <!-- RELACIONES MEJORADAS CON ESTILOS MODERNOS -->
+        
+        <!-- Factory Method Inheritance -->
+        <mxCell id="factory-inheritance-1" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=1;strokeWidth=3;strokeColor=#4facfe;shadow=1;" edge="1" parent="1" source="dinein-factory-improved" target="order-factory-improved">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="200" y="780" as="sourcePoint" />
+            <mxPoint x="200" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="factory-inheritance-2" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=1;strokeWidth=3;strokeColor=#4facfe;shadow=1;" edge="1" parent="1" source="takeaway-factory-improved" target="order-factory-improved">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="530" y="780" as="sourcePoint" />
+            <mxPoint x="225" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="factory-inheritance-3" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=1;strokeWidth=3;strokeColor=#4facfe;shadow=1;" edge="1" parent="1" source="delivery-factory-improved" target="order-factory-improved">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="860" y="780" as="sourcePoint" />
+            <mxPoint x="350" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Abstract Factory Inheritance -->
+        <mxCell id="abstract-factory-inheritance-1" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=1;strokeWidth=3;strokeColor=#fa709a;shadow=1;" edge="1" parent="1" source="dinein-system-factory-improved" target="order-system-factory-improved">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="225" y="1590" as="sourcePoint" />
+            <mxPoint x="250" y="1550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="abstract-factory-inheritance-2" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=1;strokeWidth=3;strokeColor=#fa709a;shadow=1;" edge="1" parent="1" source="takeaway-system-factory-improved" target="order-system-factory-improved">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="605" y="1590" as="sourcePoint" />
+            <mxPoint x="250" y="1550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="abstract-factory-inheritance-3" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=1;strokeWidth=3;strokeColor=#fa709a;shadow=1;" edge="1" parent="1" source="delivery-system-factory-improved" target="order-system-factory-improved">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="985" y="1590" as="sourcePoint" />
+            <mxPoint x="350" y="1550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Reservation Factory Inheritance -->
+        <mxCell id="reservation-factory-inheritance-1" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=1;strokeWidth=3;strokeColor=#a8edea;shadow=1;" edge="1" parent="1" source="standard-reservation-factory-improved" target="reservation-system-factory-improved">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1400" y="1590" as="sourcePoint" />
+            <mxPoint x="725" y="1510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="reservation-factory-inheritance-2" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=1;strokeWidth=3;strokeColor=#a8edea;shadow=1;" edge="1" parent="1" source="vip-reservation-factory-improved" target="reservation-system-factory-improved">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1805" y="1590" as="sourcePoint" />
+            <mxPoint x="850" y="1510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Factory Creates Relations -->
+        <mxCell id="factory-creates-1" value="creates" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=1;strokeWidth=2;strokeColor=#43e97b;shadow=1;dashed=1;" edge="1" parent="1" source="factory-producer-improved" target="order-factory-improved">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="450" y="680" as="sourcePoint" />
+            <mxPoint x="400" y="680" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Builder Creates Relations -->
+        <mxCell id="builder-creates-1" value="builds" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=1;strokeWidth=2;strokeColor=#43e97b;shadow=1;dashed=1;" edge="1" parent="1" source="order-builder-improved" target="order-entity-improved">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="260" y="1270" as="sourcePoint" />
+            <mxPoint x="160" y="1850" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="builder-creates-2" value="builds" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=1;strokeWidth=2;strokeColor=#fa709a;shadow=1;dashed=1;" edge="1" parent="1" source="menuitem-builder-improved" target="menuitem-entity-improved">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="740" y="1270" as="sourcePoint" />
+            <mxPoint x="630" y="1850" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="builder-creates-3" value="builds" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=1;strokeWidth=2;strokeColor=#667eea;shadow=1;dashed=1;" edge="1" parent="1" source="customer-builder-improved" target="customer-entity-improved">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1200" y="1210" as="sourcePoint" />
+            <mxPoint x="850" y="1850" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="builder-creates-4" value="builds" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=1;strokeWidth=2;strokeColor=#f093fb;shadow=1;dashed=1;" edge="1" parent="1" source="invoice-builder-improved" target="invoice-entity-improved">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1635" y="1210" as="sourcePoint" />
+            <mxPoint x="1060" y="1850" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Entity Relationships -->
+        <mxCell id="order-orderitem-relation" value="1" style="endArrow=none;html=1;endSize=12;startArrow=none;startSize=12;startFill=0;endFill=0;rounded=1;strokeWidth=3;strokeColor=#4a90e2;shadow=1;" edge="1" parent="1" source="order-entity-improved" target="orderitem-entity-improved">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="270" y="2000" as="sourcePoint" />
+            <mxPoint x="300" y="1950" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="order-orderitem-label" value="*" style="resizable=0;html=1;align=right;verticalAlign=bottom;fontSize=14;fontStyle=1;color=#4a90e2;" connectable="0" vertex="1" parent="order-orderitem-relation">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint x="-5" y="5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="order-invoice-relation" value="1" style="endArrow=none;html=1;endSize=12;startArrow=none;startSize=12;startFill=0;endFill=0;rounded=1;strokeWidth=3;strokeColor=#f093fb;shadow=1;" edge="1" parent="1" source="order-entity-improved" target="invoice-entity-improved">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="270" y="1900" as="sourcePoint" />
+            <mxPoint x="970" y="1960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="order-invoice-label" value="1" style="resizable=0;html=1;align=right;verticalAlign=bottom;fontSize=14;fontStyle=1;color=#f093fb;" connectable="0" vertex="1" parent="order-invoice-relation">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint x="-5" y="5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="invoice-payment-relation" value="1" style="endArrow=none;html=1;endSize=12;startArrow=none;startSize=12;startFill=0;endFill=0;rounded=1;strokeWidth=3;strokeColor=#fa709a;shadow=1;" edge="1" parent="1" source="invoice-entity-improved" target="payment-entity-improved">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1150" y="1960" as="sourcePoint" />
+            <mxPoint x="1180" y="1940" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="invoice-payment-label" value="*" style="resizable=0;html=1;align=right;verticalAlign=bottom;fontSize=14;fontStyle=1;color=#fa709a;" connectable="0" vertex="1" parent="invoice-payment-relation">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint x="-5" y="5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="customer-order-relation" value="1" style="endArrow=none;html=1;endSize=12;startArrow=none;startSize=12;startFill=0;endFill=0;rounded=1;strokeWidth=3;strokeColor=#667eea;shadow=1;" edge="1" parent="1" source="customer-entity-improved" target="order-entity-improved">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="760" y="2000" as="sourcePoint" />
+            <mxPoint x="270" y="2000" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="customer-order-label" value="*" style="resizable=0;html=1;align=right;verticalAlign=bottom;fontSize=14;fontStyle=1;color=#667eea;" connectable="0" vertex="1" parent="customer-order-relation">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint x="-5" y="5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="customer-reservation-relation" value="1" style="endArrow=none;html=1;endSize=12;startArrow=none;startSize=12;startFill=0;endFill=0;rounded=1;strokeWidth=3;strokeColor=#fbc2eb;shadow=1;" edge="1" parent="1" source="customer-entity-improved" target="reservation-entity-improved">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="940" y="2000" as="sourcePoint" />
+            <mxPoint x="1390" y="1960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="customer-reservation-label" value="*" style="resizable=0;html=1;align=right;verticalAlign=bottom;fontSize=14;fontStyle=1;color=#fbc2eb;" connectable="0" vertex="1" parent="customer-reservation-relation">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint x="-5" y="5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="menuitem-orderitem-relation" value="1" style="endArrow=none;html=1;endSize=12;startArrow=none;startSize=12;startFill=0;endFill=0;rounded=1;strokeWidth=3;strokeColor=#43e97b;shadow=1;" edge="1" parent="1" source="menuitem-entity-improved" target="orderitem-entity-improved">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="530" y="1950" as="sourcePoint" />
+            <mxPoint x="500" y="1950" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="menuitem-orderitem-label" value="*" style="resizable=0;html=1;align=right;verticalAlign=bottom;fontSize=14;fontStyle=1;color=#43e97b;" connectable="0" vertex="1" parent="menuitem-orderitem-relation">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint x="-5" y="5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- LEYENDA MEJORADA -->
+        <mxCell id="legend-box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#4a90e2;strokeWidth=2;shadow=1;glass=1;" vertex="1" parent="1">
+          <mxGeometry x="1620" y="1850" width="330" height="280" as="geometry" />
+        </mxCell>
+
+        <mxCell id="legend-title" value="LEYENDA DE PATRONES" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;color=#333;" vertex="1" parent="1">
+          <mxGeometry x="1630" y="1860" width="310" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Legend Items -->
+        <mxCell id="legend-singleton" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1640" y="1900" width="20" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-singleton-text" value="Singleton Pattern" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1670" y="1895" width="120" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="legend-factory" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1640" y="1925" width="20" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-factory-text" value="Factory Method" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1670" y="1920" width="120" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="legend-builder" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1640" y="1950" width="20" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-builder-text" value="Builder Pattern" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1670" y="1945" width="120" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="legend-abstract" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1640" y="1975" width="20" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-abstract-text" value="Abstract Factory" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1670" y="1970" width="120" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="legend-entities" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1640" y="2000" width="20" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-entities-text" value="Domain Entities" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1670" y="1995" width="120" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Relationship Legend -->
+        <mxCell id="legend-inheritance" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=1;strokeWidth=2;strokeColor=#4a90e2;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1640" y="2035" as="sourcePoint" />
+            <mxPoint x="1680" y="2035" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend-inheritance-text" value="Inheritance" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1690" y="2025" width="120" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="legend-creates" value="creates" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=1;strokeWidth=2;strokeColor=#43e97b;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1640" y="2055" as="sourcePoint" />
+            <mxPoint x="1680" y="2055" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend-creates-text" value="Creates/Builds" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1690" y="2045" width="120" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="legend-association" value="1  *" style="endArrow=none;html=1;endSize=12;startArrow=none;startSize=12;startFill=0;endFill=0;rounded=1;strokeWidth=2;strokeColor=#667eea;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1640" y="2075" as="sourcePoint" />
+            <mxPoint x="1680" y="2075" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend-association-text" value="Association" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1690" y="2065" width="120" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- FOOTER -->
+        <mxCell id="footer" value="Diagrama UML - Patrones Creacionales para Sistema de Restaurante | Versión Mejorada" style="text;html=1;strokeColor=none;fillColor=#f8f9fa;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=14;fontStyle=2;color=#666;" vertex="1" parent="1">
+          <mxGeometry x="50" y="2200" width="1900" height="40" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
