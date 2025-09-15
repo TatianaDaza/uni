@@ -1,430 +1,369 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mxfile host="app.diagrams.net" modified="2024-09-14T12:00:00.000Z" etag="UML-Creational-Patterns" version="21.6.5" type="device">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0" version="28.2.0">
   <diagram name="Patrones Creacionales" id="creational-patterns">
-    <mxGraphModel dx="2074" dy="1129" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="2336" math="0" shadow="0">
+    <mxGraphModel dx="1273" dy="587" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="2336" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        
-        <!-- TÍTULO PRINCIPAL -->
-        <mxCell id="title" value="PATRONES CREACIONALES - SISTEMA DE RESTAURANTE" style="text;html=1;strokeColor=none;fillColor=#e1d5e7;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="title" value="PATRONES CREACIONALES - SISTEMA DE RESTAURANTE" style="text;html=1;strokeColor=none;fillColor=#e1d5e7;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="50" y="20" width="1554" height="40" as="geometry" />
         </mxCell>
-
-        <!-- SECCIÓN SINGLETON -->
-        <mxCell id="singleton-section" value="PATRÓN SINGLETON" style="text;html=1;strokeColor=#9673a6;fillColor=#e1d5e7;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+        <mxCell id="singleton-section" value="PATRÓN SINGLETON" style="text;html=1;strokeColor=#9673a6;fillColor=#e1d5e7;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;" parent="1" vertex="1">
           <mxGeometry x="50" y="80" width="300" height="30" as="geometry" />
         </mxCell>
-
-        <!-- LoggerSingleton -->
-        <mxCell id="logger-singleton" value="LoggerSingleton&#xa;&#xa;- _instance: LoggerSingleton [static]&#xa;- _lock: threading.Lock [static]&#xa;- _logs: list&#xa;- _initialized: bool&#xa;&#xa;+ __new__(): LoggerSingleton&#xa;+ __init__()&#xa;+ log(level: str, message: str, data: Dict)&#xa;+ get_logs(level?: str): list&#xa;+ clear_logs()" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+        <mxCell id="logger-singleton" value="LoggerSingleton&#xa;&#xa;- _instance: LoggerSingleton [static]&#xa;- _lock: threading.Lock [static]&#xa;- _logs: list&#xa;- _initialized: bool&#xa;&#xa;+ __new__(): LoggerSingleton&#xa;+ __init__()&#xa;+ log(level: str, message: str, data: Dict)&#xa;+ get_logs(level?: str): list&#xa;+ clear_logs()" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
           <mxGeometry x="50" y="120" width="280" height="200" as="geometry" />
         </mxCell>
-
-        <!-- CacheSingleton -->
-        <mxCell id="cache-singleton" value="CacheSingleton&#xa;&#xa;- _instance: CacheSingleton [static]&#xa;- _lock: threading.Lock [static]&#xa;- _cache: Dict[str, Any]&#xa;- _ttl: Dict[str, float]&#xa;- _initialized: bool&#xa;&#xa;+ __new__(): CacheSingleton&#xa;+ __init__()&#xa;+ set(key: str, value: Any, ttl_seconds: int)&#xa;+ get(key: str): Any&#xa;+ delete(key: str): bool&#xa;+ clear()" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="370" y="120" width="280" height="200" as="geometry" />
+        <mxCell id="cache-singleton" value="CacheSingleton&#xa;&#xa;- _instance: CacheSingleton [static]&#xa;- _lock: threading.Lock [static]&#xa;- _cache: Dict[str, Any]&#xa;- _ttl: Dict[str, float]&#xa;- _initialized: bool&#xa;&#xa;+ __new__(): CacheSingleton&#xa;+ __init__()&#xa;+ set(key: str, value: Any, ttl_seconds: int)&#xa;+ get(key: str): Any&#xa;+ delete(key: str): bool&#xa;+ clear()" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="370" y="120" width="280" height="210" as="geometry" />
         </mxCell>
-
-        <!-- NotificationSingleton -->
-        <mxCell id="notification-singleton" value="NotificationSingleton&#xa;&#xa;- _instance: NotificationSingleton [static]&#xa;- _lock: threading.Lock [static]&#xa;- _notifications: list&#xa;- _subscribers: Dict[str, list]&#xa;- _initialized: bool&#xa;&#xa;+ __new__(): NotificationSingleton&#xa;+ __init__()&#xa;+ subscribe(event_type: str, callback)&#xa;+ notify(event_type: str, data: Dict)&#xa;+ get_notifications(event_type?: str): list" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="690" y="120" width="300" height="200" as="geometry" />
+        <mxCell id="notification-singleton" value="NotificationSingleton&#xa;&#xa;- _instance: NotificationSingleton [static]&#xa;- _lock: threading.Lock [static]&#xa;- _notifications: list&#xa;- _subscribers: Dict[str, list]&#xa;- _initialized: bool&#xa;&#xa;+ __new__(): NotificationSingleton&#xa;+ __init__()&#xa;+ subscribe(event_type: str, callback)&#xa;+ notify(event_type: str, data: Dict)&#xa;+ get_notifications(event_type?: str): list" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="690" y="120" width="300" height="210" as="geometry" />
         </mxCell>
-
-        <!-- ConfigurationSingleton -->
-        <mxCell id="config-singleton" value="ConfigurationSingleton&#xa;&#xa;- _instance: ConfigurationSingleton [static]&#xa;- _lock: threading.Lock [static]&#xa;- _config: Dict[str, Any]&#xa;- _initialized: bool&#xa;&#xa;+ __new__(): ConfigurationSingleton&#xa;+ __init__()&#xa;+ get(key: str, default: Any): Any&#xa;+ set(key: str, value: Any)&#xa;+ get_all(): Dict[str, Any]&#xa;+ update(config_dict: Dict[str, Any])" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="1030" y="120" width="280" height="200" as="geometry" />
+        <mxCell id="config-singleton" value="ConfigurationSingleton&#xa;&#xa;- _instance: ConfigurationSingleton [static]&#xa;- _lock: threading.Lock [static]&#xa;- _config: Dict[str, Any]&#xa;- _initialized: bool&#xa;&#xa;+ __new__(): ConfigurationSingleton&#xa;+ __init__()&#xa;+ get(key: str, default: Any): Any&#xa;+ set(key: str, value: Any)&#xa;+ get_all(): Dict[str, Any]&#xa;+ update(config_dict: Dict[str, Any])" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="1030" y="120" width="280" height="210" as="geometry" />
         </mxCell>
-
-        <!-- DatabaseConnectionSingleton -->
-        <mxCell id="db-singleton" value="DatabaseConnectionSingleton&#xa;&#xa;- _instance: DatabaseConnectionSingleton [static]&#xa;- _lock: threading.Lock [static]&#xa;- _connection: db_connection&#xa;- _initialized: bool&#xa;&#xa;+ __new__(): DatabaseConnectionSingleton&#xa;+ __init__()&#xa;+ connection: property&#xa;+ health_check(): bool" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+        <mxCell id="db-singleton" value="DatabaseConnectionSingleton&#xa;&#xa;- _instance: DatabaseConnectionSingleton [static]&#xa;- _lock: threading.Lock [static]&#xa;- _connection: db_connection&#xa;- _initialized: bool&#xa;&#xa;+ __new__(): DatabaseConnectionSingleton&#xa;+ __init__()&#xa;+ connection: property&#xa;+ health_check(): bool" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
           <mxGeometry x="1350" y="120" width="280" height="200" as="geometry" />
         </mxCell>
-
-        <!-- SECCIÓN FACTORY METHOD -->
-        <mxCell id="factory-section" value="PATRÓN FACTORY METHOD" style="text;html=1;strokeColor=#82b366;fillColor=#d5e8d4;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+        <mxCell id="factory-section" value="PATRÓN FACTORY METHOD" style="text;html=1;strokeColor=#82b366;fillColor=#d5e8d4;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;" parent="1" vertex="1">
           <mxGeometry x="50" y="360" width="300" height="30" as="geometry" />
         </mxCell>
-
-        <!-- OrderFactory Abstract -->
-        <mxCell id="order-factory" value="&lt;&lt;abstract&gt;&gt;&#xa;OrderFactory&#xa;&#xa;+ create_order(order_data: Dict): Order [abstract]" style="swimlane;fontStyle=3;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+        <mxCell id="order-factory" value="&lt;&lt;abstract&gt;&gt;OrderFactory&#xa;&#xa;&#xa;+ create_order(order_data: Dict): Order [abstract]" style="swimlane;fontStyle=3;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
           <mxGeometry x="50" y="400" width="280" height="80" as="geometry" />
         </mxCell>
-
-        <!-- DineInOrderFactory -->
-        <mxCell id="dinein-factory" value="DineInOrderFactory&#xa;&#xa;+ create_order(order_data: Dict): Order" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+        <mxCell id="dinein-factory" value="DineInOrderFactory&#xa;&#xa;+ create_order(order_data: Dict): Order" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
           <mxGeometry x="50" y="520" width="240" height="60" as="geometry" />
         </mxCell>
-
-        <!-- TakeawayOrderFactory -->
-        <mxCell id="takeaway-factory" value="TakeawayOrderFactory&#xa;&#xa;+ create_order(order_data: Dict): Order" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+        <mxCell id="takeaway-factory" value="TakeawayOrderFactory&#xa;&#xa;+ create_order(order_data: Dict): Order" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
           <mxGeometry x="310" y="520" width="240" height="60" as="geometry" />
         </mxCell>
-
-        <!-- DeliveryOrderFactory -->
-        <mxCell id="delivery-factory" value="DeliveryOrderFactory&#xa;&#xa;+ create_order(order_data: Dict): Order" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+        <mxCell id="delivery-factory" value="DeliveryOrderFactory&#xa;&#xa;+ create_order(order_data: Dict): Order" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
           <mxGeometry x="570" y="520" width="240" height="60" as="geometry" />
         </mxCell>
-
-        <!-- OrderFactoryProducer -->
-        <mxCell id="factory-producer" value="OrderFactoryProducer&#xa;&#xa;- _factories: Dict [static]&#xa;+ get_factory(order_type: str): OrderFactory [static]" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="370" y="400" width="280" height="80" as="geometry" />
+        <mxCell id="factory-producer" value="OrderFactoryProducer&#xa;&#xa;&#xa;- _factories: Dict [static]&#xa;+ get_factory(order_type: str): OrderFactory [static]" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="370" y="400" width="300" height="80" as="geometry" />
         </mxCell>
-
-        <!-- Static Factories -->
-        <mxCell id="menuitem-factory" value="MenuItemFactory&#xa;&#xa;+ create_menu_item(item_data: Dict): MenuItem [static]" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="830" y="400" width="280" height="60" as="geometry" />
+        <mxCell id="menuitem-factory" value="MenuItemFactory&#xa;&#xa;+ create_menu_item(item_data: Dict): MenuItem [static]" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="790" y="400" width="320" height="60" as="geometry" />
         </mxCell>
-
-        <mxCell id="customer-factory" value="CustomerFactory&#xa;&#xa;+ create_customer(customer_data: Dict): Customer [static]" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="1130" y="400" width="280" height="60" as="geometry" />
+        <mxCell id="customer-factory" value="CustomerFactory&#xa;&#xa;+ create_customer(customer_data: Dict): Customer [static]" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="1130" y="400" width="430" height="60" as="geometry" />
         </mxCell>
-
-        <mxCell id="invoice-factory" value="InvoiceFactory&#xa;&#xa;+ create_invoice(invoice_data: Dict): Invoice [static]" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="830" y="480" width="280" height="60" as="geometry" />
+        <mxCell id="invoice-factory" value="InvoiceFactory&#xa;&#xa;+ create_invoice(invoice_data: Dict): Invoice [static]" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="850" y="480" width="300" height="60" as="geometry" />
         </mxCell>
-
-        <mxCell id="payment-factory" value="PaymentFactory&#xa;&#xa;+ create_payment(payment_data: Dict): Payment [static]" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="1130" y="480" width="280" height="60" as="geometry" />
+        <mxCell id="payment-factory" value="PaymentFactory&#xa;&#xa;+ create_payment(payment_data: Dict): Payment [static]" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="1200" y="480" width="340" height="60" as="geometry" />
         </mxCell>
-
-        <mxCell id="reservation-factory" value="ReservationFactory&#xa;&#xa;+ create_reservation(reservation_data: Dict): Reservation [static]" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="830" y="560" width="280" height="60" as="geometry" />
+        <mxCell id="reservation-factory" value="ReservationFactory&#xa;&#xa;+ create_reservation(reservation_data: Dict): Reservation [static]" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="820" y="560" width="390" height="60" as="geometry" />
         </mxCell>
-
-        <!-- SECCIÓN BUILDER -->
-        <mxCell id="builder-section" value="PATRÓN BUILDER" style="text;html=1;strokeColor=#d79b00;fillColor=#ffe6cc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="50" y="660" width="300" height="30" as="geometry" />
+        <mxCell id="builder-section" value="PATRÓN BUILDER" style="text;html=1;strokeColor=#d79b00;fillColor=#ffe6cc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="620" width="300" height="30" as="geometry" />
         </mxCell>
-
-        <!-- OrderBuilder -->
-        <mxCell id="order-builder" value="OrderBuilder&#xa;&#xa;- _order_data: Dict[str, Any]&#xa;- _order_items: List[Dict[str, Any]]&#xa;&#xa;+ set_customer(customer_id: str): OrderBuilder&#xa;+ set_table(table_id: str): OrderBuilder&#xa;+ set_order_type(order_type_id: str): OrderBuilder&#xa;+ set_status(status_id: str): OrderBuilder&#xa;+ set_special_instructions(instructions: str): OrderBuilder&#xa;+ add_order_item(...): OrderBuilder&#xa;+ calculate_totals(tax_rate: float, discount_amount: float): OrderBuilder&#xa;+ build(): Order" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
-          <mxGeometry x="50" y="700" width="370" height="200" as="geometry" />
+        <mxCell id="order-builder" value="OrderBuilder&#xa;&#xa;- _order_data: Dict[str, Any]&#xa;- _order_items: List[Dict[str, Any]]&#xa;&#xa;&#xa;&#xa;+ set_customer(customer_id: str): OrderBuilder&#xa;+ set_table(table_id: str): OrderBuilder&#xa;+ set_order_type(order_type_id: str): OrderBuilder&#xa;+ set_status(status_id: str): OrderBuilder&#xa;+ set_special_instructions(instructions: str): OrderBuilder&#xa;+ add_order_item(...): OrderBuilder&#xa;+ calculate_totals(tax_rate: float, discount_amount: float): OrderBuilder&#xa;+ build(): Order" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="10" y="670" width="410" height="240" as="geometry" />
         </mxCell>
-
-        <!-- MenuItemBuilder -->
-        <mxCell id="menuitem-builder" value="MenuItemBuilder&#xa;&#xa;- _item_data: Dict[str, Any]&#xa;&#xa;+ set_basic_info(name: str, description: str, price: float): MenuItemBuilder&#xa;+ set_category(category_id: str): MenuItemBuilder&#xa;+ set_pricing(cost: float): MenuItemBuilder&#xa;+ set_preparation(preparation_time: int): MenuItemBuilder&#xa;+ set_availability(is_available: bool, is_featured: bool): MenuItemBuilder&#xa;+ set_image(image_url: str): MenuItemBuilder&#xa;+ set_allergen_info(allergens: List[str]): MenuItemBuilder&#xa;+ set_nutritional_info(nutritional_data: Dict): MenuItemBuilder&#xa;+ build(): MenuItem" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+        <mxCell id="menuitem-builder" value="MenuItemBuilder&#xa;&#xa;- _item_data: Dict[str, Any]&#xa;&#xa;+ set_basic_info(name: str, description: str, price: float): MenuItemBuilder&#xa;+ set_category(category_id: str): MenuItemBuilder&#xa;+ set_pricing(cost: float): MenuItemBuilder&#xa;+ set_preparation(preparation_time: int): MenuItemBuilder&#xa;+ set_availability(is_available: bool, is_featured: bool): MenuItemBuilder&#xa;+ set_image(image_url: str): MenuItemBuilder&#xa;+ set_allergen_info(allergens: List[str]): MenuItemBuilder&#xa;+ set_nutritional_info(nutritional_data: Dict): MenuItemBuilder&#xa;+ build(): MenuItem" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
           <mxGeometry x="450" y="700" width="420" height="200" as="geometry" />
         </mxCell>
-
-        <!-- CustomerBuilder -->
-        <mxCell id="customer-builder" value="CustomerBuilder&#xa;&#xa;- _customer_data: Dict[str, Any]&#xa;&#xa;+ set_personal_info(...): CustomerBuilder&#xa;+ set_address(address: str): CustomerBuilder&#xa;+ set_birth_date(birth_date: str): CustomerBuilder&#xa;+ set_allergies(allergies: List[str]): CustomerBuilder&#xa;+ set_preferences(preferences: Dict): CustomerBuilder&#xa;+ set_loyalty(loyalty_points: int, is_vip: bool): CustomerBuilder&#xa;+ build(): Customer" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
-          <mxGeometry x="900" y="700" width="320" height="160" as="geometry" />
+        <mxCell id="customer-builder" value="CustomerBuilder&#xa;&#xa;- _customer_data: Dict[str, Any]&#xa;&#xa;+ set_personal_info(...): CustomerBuilder&#xa;+ set_address(address: str): CustomerBuilder&#xa;+ set_birth_date(birth_date: str): CustomerBuilder&#xa;+ set_allergies(allergies: List[str]): CustomerBuilder&#xa;+ set_preferences(preferences: Dict): CustomerBuilder&#xa;+ set_loyalty(loyalty_points: int, is_vip: bool): CustomerBuilder&#xa;+ build(): Customer" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="890" y="700" width="360" height="160" as="geometry" />
         </mxCell>
-
-        <!-- InvoiceBuilder -->
-        <mxCell id="invoice-builder" value="InvoiceBuilder&#xa;&#xa;- _invoice_data: Dict[str, Any]&#xa;&#xa;+ set_order_info(order_id: str, customer_id?: str): InvoiceBuilder&#xa;+ set_amounts(subtotal: float, tax_amount: float, discount_amount: float): InvoiceBuilder&#xa;+ set_status(status: str): InvoiceBuilder&#xa;+ set_invoice_number(invoice_number: str): InvoiceBuilder&#xa;+ set_created_by(created_by: str): InvoiceBuilder&#xa;+ build(): Invoice" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
-          <mxGeometry x="1250" y="700" width="380" height="160" as="geometry" />
+        <mxCell id="i3mjo8NSJTS3uTi82xFC-9" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="customer-builder">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint y="60" as="sourcePoint" />
+            <mxPoint x="360" y="60" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
-
-        <!-- SECCIÓN ABSTRACT FACTORY -->
-        <mxCell id="abstract-factory-section" value="PATRÓN ABSTRACT FACTORY" style="text;html=1;strokeColor=#b85450;fillColor=#f8cecc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+        <mxCell id="invoice-builder" value="InvoiceBuilder&#xa;&#xa;- _invoice_data: Dict[str, Any]&#xa;&#xa;+ set_order_info(order_id: str, customer_id?: str): InvoiceBuilder&#xa;+ set_amounts(subtotal: float, tax_amount: float, discount_amount: float): InvoiceBuilder&#xa;+ set_status(status: str): InvoiceBuilder&#xa;+ set_invoice_number(invoice_number: str): InvoiceBuilder&#xa;+ set_created_by(created_by: str): InvoiceBuilder&#xa;+ build(): Invoice" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="1270" y="700" width="530" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="abstract-factory-section" value="PATRÓN ABSTRACT FACTORY" style="text;html=1;strokeColor=#b85450;fillColor=#f8cecc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;" parent="1" vertex="1">
           <mxGeometry x="50" y="940" width="300" height="30" as="geometry" />
         </mxCell>
-
-        <!-- OrderSystemFactory Abstract -->
-        <mxCell id="order-system-factory" value="&lt;&lt;abstract&gt;&gt;&#xa;OrderSystemFactory&#xa;&#xa;+ create_order(order_data: Dict): Order [abstract]&#xa;+ create_order_item(item_data: Dict): OrderItem [abstract]&#xa;+ create_invoice(invoice_data: Dict): Invoice [abstract]&#xa;+ create_payment(payment_data: Dict): Payment [abstract]" style="swimlane;fontStyle=3;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+        <mxCell id="order-system-factory" value="&lt;&lt;abstract&gt;&gt; OrderSystemFactory&#xa;&#xa;+ create_order(order_data: Dict): Order [abstract]&#xa;+ create_order_item(item_data: Dict): OrderItem [abstract]&#xa;+ create_invoice(invoice_data: Dict): Invoice [abstract]&#xa;+ create_payment(payment_data: Dict): Payment [abstract]" style="swimlane;fontStyle=3;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="50" y="980" width="350" height="120" as="geometry" />
         </mxCell>
-
-        <!-- DineInSystemFactory -->
-        <mxCell id="dinein-system-factory" value="DineInSystemFactory&#xa;&#xa;+ create_order(order_data: Dict): Order&#xa;+ create_order_item(item_data: Dict): OrderItem&#xa;+ create_invoice(invoice_data: Dict): Invoice&#xa;+ create_payment(payment_data: Dict): Payment" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+        <mxCell id="dinein-system-factory" value="DineInSystemFactory&#xa;&#xa;+ create_order(order_data: Dict): Order&#xa;+ create_order_item(item_data: Dict): OrderItem&#xa;+ create_invoice(invoice_data: Dict): Invoice&#xa;+ create_payment(payment_data: Dict): Payment" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="50" y="1140" width="300" height="100" as="geometry" />
         </mxCell>
-
-        <!-- TakeawaySystemFactory -->
-        <mxCell id="takeaway-system-factory" value="TakeawaySystemFactory&#xa;&#xa;+ create_order(order_data: Dict): Order&#xa;+ create_order_item(item_data: Dict): OrderItem&#xa;+ create_invoice(invoice_data: Dict): Invoice&#xa;+ create_payment(payment_data: Dict): Payment" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+        <mxCell id="takeaway-system-factory" value="TakeawaySystemFactory&#xa;&#xa;+ create_order(order_data: Dict): Order&#xa;+ create_order_item(item_data: Dict): OrderItem&#xa;+ create_invoice(invoice_data: Dict): Invoice&#xa;+ create_payment(payment_data: Dict): Payment" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="370" y="1140" width="300" height="100" as="geometry" />
         </mxCell>
-
-        <!-- DeliverySystemFactory -->
-        <mxCell id="delivery-system-factory" value="DeliverySystemFactory&#xa;&#xa;+ create_order(order_data: Dict): Order&#xa;+ create_order_item(item_data: Dict): OrderItem&#xa;+ create_invoice(invoice_data: Dict): Invoice&#xa;+ create_payment(payment_data: Dict): Payment" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+        <mxCell id="delivery-system-factory" value="DeliverySystemFactory&#xa;&#xa;+ create_order(order_data: Dict): Order&#xa;+ create_order_item(item_data: Dict): OrderItem&#xa;+ create_invoice(invoice_data: Dict): Invoice&#xa;+ create_payment(payment_data: Dict): Payment" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="690" y="1140" width="300" height="100" as="geometry" />
         </mxCell>
-
-        <!-- ReservationSystemFactory Abstract -->
-        <mxCell id="reservation-system-factory" value="&lt;&lt;abstract&gt;&gt;&#xa;ReservationSystemFactory&#xa;&#xa;+ create_reservation(reservation_data: Dict): Reservation [abstract]&#xa;+ create_customer_for_reservation(customer_data: Dict): Customer [abstract]" style="swimlane;fontStyle=3;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="450" y="980" width="380" height="100" as="geometry" />
+        <mxCell id="reservation-system-factory" value="&lt;&lt;abstract&gt;&gt; ReservationSystemFactory&#xa;&#xa;+ create_reservation(reservation_data: Dict): Reservation [abstract]&#xa;+ create_customer_for_reservation(customer_data: Dict): Customer [abstract]" style="swimlane;fontStyle=3;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="490" y="980" width="460" height="100" as="geometry" />
         </mxCell>
-
-        <!-- StandardReservationFactory -->
-        <mxCell id="standard-reservation-factory" value="StandardReservationFactory&#xa;&#xa;+ create_reservation(reservation_data: Dict): Reservation&#xa;+ create_customer_for_reservation(customer_data: Dict): Customer" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="1020" y="1140" width="350" height="80" as="geometry" />
+        <mxCell id="standard-reservation-factory" value="StandardReservationFactory&#xa;&#xa;+ create_reservation(reservation_data: Dict): Reservation&#xa;+ create_customer_for_reservation(customer_data: Dict): Customer" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="1020" y="1140" width="410" height="80" as="geometry" />
         </mxCell>
-
-        <!-- VIPReservationFactory -->
-        <mxCell id="vip-reservation-factory" value="VIPReservationFactory&#xa;&#xa;+ create_reservation(reservation_data: Dict): Reservation&#xa;+ create_customer_for_reservation(customer_data: Dict): Customer" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="1390" y="1140" width="350" height="80" as="geometry" />
+        <mxCell id="vip-reservation-factory" value="VIPReservationFactory&#xa;&#xa;+ create_reservation(reservation_data: Dict): Reservation&#xa;+ create_customer_for_reservation(customer_data: Dict): Customer" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="1460" y="1140" width="400" height="80" as="geometry" />
         </mxCell>
-
-        <!-- FactoryProducer -->
-        <mxCell id="abstract-factory-producer" value="FactoryProducer&#xa;&#xa;+ get_order_system_factory(system_type: str): OrderSystemFactory [static]&#xa;+ get_reservation_system_factory(customer_type: str): ReservationSystemFactory [static]" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="870" y="980" width="480" height="80" as="geometry" />
+        <mxCell id="abstract-factory-producer" value="FactoryProducer&#xa;&#xa;+ get_order_system_factory(system_type: str): OrderSystemFactory [static]&#xa;+ get_reservation_system_factory(customer_type: str): ReservationSystemFactory [static]" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="1100" y="990" width="520" height="80" as="geometry" />
         </mxCell>
-
-        <!-- ENTIDADES DEL DOMINIO -->
-        <mxCell id="entities-section" value="ENTIDADES DEL DOMINIO" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+        <mxCell id="entities-section" value="ENTIDADES DEL DOMINIO" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;" parent="1" vertex="1">
           <mxGeometry x="50" y="1300" width="300" height="30" as="geometry" />
         </mxCell>
-
-        <!-- Order Entity -->
-        <mxCell id="order-entity" value="Order&#xa;&#xa;+ id: str&#xa;+ order_number: str&#xa;+ customer_id: str&#xa;+ table_id: str&#xa;+ order_type_id: str&#xa;+ status_id: str&#xa;+ subtotal: float&#xa;+ tax_amount: float&#xa;+ discount_amount: float&#xa;+ total_amount: float&#xa;+ special_instructions: str&#xa;+ created_at: datetime&#xa;+ updated_at: datetime" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+        <mxCell id="order-entity" value="Order&#xa;&#xa;+ id: str&#xa;+ order_number: str&#xa;+ customer_id: str&#xa;+ table_id: str&#xa;+ order_type_id: str&#xa;+ status_id: str&#xa;+ subtotal: float&#xa;+ tax_amount: float&#xa;+ discount_amount: float&#xa;+ total_amount: float&#xa;+ special_instructions: str&#xa;+ created_at: datetime&#xa;+ updated_at: datetime" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="50" y="1340" width="200" height="240" as="geometry" />
         </mxCell>
-
-        <!-- OrderItem Entity -->
-        <mxCell id="orderitem-entity" value="OrderItem&#xa;&#xa;+ id: str&#xa;+ order_id: str&#xa;+ menu_item_id: str&#xa;+ quantity: int&#xa;+ unit_price: float&#xa;+ total_price: float&#xa;+ customizations: List&#xa;+ special_instructions: str" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+        <mxCell id="orderitem-entity" value="OrderItem&#xa;&#xa;+ id: str&#xa;+ order_id: str&#xa;+ menu_item_id: str&#xa;+ quantity: int&#xa;+ unit_price: float&#xa;+ total_price: float&#xa;+ customizations: List&#xa;+ special_instructions: str" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="280" y="1340" width="180" height="160" as="geometry" />
         </mxCell>
-
-        <!-- MenuItem Entity -->
-        <mxCell id="menuitem-entity" value="MenuItem&#xa;&#xa;+ id: str&#xa;+ name: str&#xa;+ description: str&#xa;+ price: float&#xa;+ cost: float&#xa;+ category_id: str&#xa;+ preparation_time: int&#xa;+ is_available: bool&#xa;+ is_featured: bool&#xa;+ image_url: str&#xa;+ allergen_info: List[str]&#xa;+ nutritional_info: Dict" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+        <mxCell id="menuitem-entity" value="MenuItem&#xa;&#xa;+ id: str&#xa;+ name: str&#xa;+ description: str&#xa;+ price: float&#xa;+ cost: float&#xa;+ category_id: str&#xa;+ preparation_time: int&#xa;+ is_available: bool&#xa;+ is_featured: bool&#xa;+ image_url: str&#xa;+ allergen_info: List[str]&#xa;+ nutritional_info: Dict" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="490" y="1340" width="180" height="220" as="geometry" />
         </mxCell>
-
-        <!-- Customer Entity -->
-        <mxCell id="customer-entity" value="Customer&#xa;&#xa;+ id: str&#xa;+ first_name: str&#xa;+ last_name: str&#xa;+ email: str&#xa;+ phone: str&#xa;+ address: str&#xa;+ birth_date: str&#xa;+ allergies: List[str]&#xa;+ preferences: Dict&#xa;+ loyalty_points: int&#xa;+ is_vip: bool&#xa;+ created_at: datetime" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+        <mxCell id="customer-entity" value="Customer&#xa;&#xa;+ id: str&#xa;+ first_name: str&#xa;+ last_name: str&#xa;+ email: str&#xa;+ phone: str&#xa;+ address: str&#xa;+ birth_date: str&#xa;+ allergies: List[str]&#xa;+ preferences: Dict&#xa;+ loyalty_points: int&#xa;+ is_vip: bool&#xa;+ created_at: datetime" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="700" y="1340" width="160" height="220" as="geometry" />
         </mxCell>
-
-        <!-- Invoice Entity -->
-        <mxCell id="invoice-entity" value="Invoice&#xa;&#xa;+ id: str&#xa;+ invoice_number: str&#xa;+ order_id: str&#xa;+ customer_id: str&#xa;+ subtotal: float&#xa;+ tax_amount: float&#xa;+ discount_amount: float&#xa;+ total_amount: float&#xa;+ status: str&#xa;+ created_by: str&#xa;+ created_at: datetime" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+        <mxCell id="invoice-entity" value="Invoice&#xa;&#xa;+ id: str&#xa;+ invoice_number: str&#xa;+ order_id: str&#xa;+ customer_id: str&#xa;+ subtotal: float&#xa;+ tax_amount: float&#xa;+ discount_amount: float&#xa;+ total_amount: float&#xa;+ status: str&#xa;+ created_by: str&#xa;+ created_at: datetime" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="890" y="1340" width="160" height="200" as="geometry" />
         </mxCell>
-
-        <!-- Payment Entity -->
-        <mxCell id="payment-entity" value="Payment&#xa;&#xa;+ id: str&#xa;+ invoice_id: str&#xa;+ amount: float&#xa;+ payment_method: str&#xa;+ status: str&#xa;+ transaction_id: str&#xa;+ created_at: datetime" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+        <mxCell id="payment-entity" value="Payment&#xa;&#xa;+ id: str&#xa;+ invoice_id: str&#xa;+ amount: float&#xa;+ payment_method: str&#xa;+ status: str&#xa;+ transaction_id: str&#xa;+ created_at: datetime" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="1080" y="1340" width="160" height="140" as="geometry" />
         </mxCell>
-
-        <!-- Reservation Entity -->
-        <mxCell id="reservation-entity" value="Reservation&#xa;&#xa;+ id: str&#xa;+ customer_id: str&#xa;+ table_id: str&#xa;+ reservation_date: datetime&#xa;+ party_size: int&#xa;+ duration: int&#xa;+ status: str&#xa;+ special_requests: str&#xa;+ created_at: datetime" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+        <mxCell id="reservation-entity" value="Reservation&#xa;&#xa;+ id: str&#xa;+ customer_id: str&#xa;+ table_id: str&#xa;+ reservation_date: datetime&#xa;+ party_size: int&#xa;+ duration: int&#xa;+ status: str&#xa;+ special_requests: str&#xa;+ created_at: datetime" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="1270" y="1340" width="180" height="180" as="geometry" />
         </mxCell>
-
-        <!-- RELACIONES - Factory Method -->
-        <mxCell id="factory-inheritance1" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="dinein-factory" target="order-factory">
+        <mxCell id="factory-inheritance1" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="dinein-factory" target="order-factory" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="170" y="520" as="sourcePoint" />
             <mxPoint x="120" y="480" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-
-        <mxCell id="factory-inheritance2" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="takeaway-factory" target="order-factory">
+        <mxCell id="factory-inheritance2" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="takeaway-factory" target="order-factory" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="430" y="520" as="sourcePoint" />
             <mxPoint x="190" y="480" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-
-        <mxCell id="factory-inheritance3" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="delivery-factory" target="order-factory">
+        <mxCell id="factory-inheritance3" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="delivery-factory" target="order-factory" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="690" y="520" as="sourcePoint" />
             <mxPoint x="260" y="480" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-
-        <mxCell id="factory-creates1" value="creates" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;dashed=1;" edge="1" parent="1" source="factory-producer" target="order-factory">
+        <mxCell id="factory-creates1" value="creates" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;dashed=1;" parent="1" source="factory-producer" target="order-factory" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="650" y="440" as="sourcePoint" />
             <mxPoint x="810" y="440" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-
-        <!-- RELACIONES - Abstract Factory -->
-        <mxCell id="abstract-factory-inheritance1" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="dinein-system-factory" target="order-system-factory">
+        <mxCell id="abstract-factory-inheritance1" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="dinein-system-factory" target="order-system-factory" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="200" y="1140" as="sourcePoint" />
             <mxPoint x="138" y="1100" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-
-        <mxCell id="abstract-factory-inheritance2" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="takeaway-system-factory" target="order-system-factory">
+        <mxCell id="abstract-factory-inheritance2" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="takeaway-system-factory" target="order-system-factory" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="520" y="1140" as="sourcePoint" />
             <mxPoint x="225" y="1100" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-
-        <mxCell id="abstract-factory-inheritance3" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="delivery-system-factory" target="order-system-factory">
+        <mxCell id="abstract-factory-inheritance3" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="delivery-system-factory" target="order-system-factory" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="840" y="1140" as="sourcePoint" />
             <mxPoint x="313" y="1100" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-
-        <mxCell id="reservation-factory-inheritance1" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="standard-reservation-factory" target="reservation-system-factory">
+        <mxCell id="reservation-factory-inheritance1" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="standard-reservation-factory" target="reservation-system-factory" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="1195" y="1140" as="sourcePoint" />
             <mxPoint x="545" y="1080" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-
-        <mxCell id="reservation-factory-inheritance2" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="vip-reservation-factory" target="reservation-system-factory">
+        <mxCell id="reservation-factory-inheritance2" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="vip-reservation-factory" target="reservation-system-factory" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="1565" y="1140" as="sourcePoint" />
             <mxPoint x="735" y="1080" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-
-        <mxCell id="abstract-factory-creates1" value="creates" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;dashed=1;" edge="1" parent="1" source="abstract-factory-producer" target="order-system-factory">
+        <mxCell id="abstract-factory-creates1" value="creates" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;dashed=1;" parent="1" source="abstract-factory-producer" target="order-system-factory" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="990" y="1060" as="sourcePoint" />
             <mxPoint x="225" y="980" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-
-        <mxCell id="abstract-factory-creates2" value="creates" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;dashed=1;" edge="1" parent="1" source="abstract-factory-producer" target="reservation-system-factory">
+        <mxCell id="abstract-factory-creates2" value="creates" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;dashed=1;" parent="1" source="abstract-factory-producer" target="reservation-system-factory" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="1230" y="1060" as="sourcePoint" />
             <mxPoint x="640" y="980" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-
-        <!-- RELACIONES - Builder Pattern -->
-        <mxCell id="builder-creates1" value="builds" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;dashed=1;" edge="1" parent="1" source="order-builder" target="order-entity">
+        <mxCell id="builder-creates1" value="builds" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;dashed=1;" parent="1" source="order-builder" target="order-entity" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="235" y="900" as="sourcePoint" />
             <mxPoint x="150" y="1340" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-
-        <mxCell id="builder-creates2" value="builds" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;dashed=1;" edge="1" parent="1" source="menuitem-builder" target="menuitem-entity">
+        <mxCell id="builder-creates2" value="builds" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;dashed=1;" parent="1" source="menuitem-builder" target="menuitem-entity" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="660" y="900" as="sourcePoint" />
             <mxPoint x="580" y="1340" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-
-        <mxCell id="builder-creates3" value="builds" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;dashed=1;" edge="1" parent="1" source="customer-builder" target="customer-entity">
+        <mxCell id="builder-creates3" value="builds" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;dashed=1;" parent="1" source="customer-builder" target="customer-entity" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="1060" y="860" as="sourcePoint" />
             <mxPoint x="780" y="1340" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-
-        <mxCell id="builder-creates4" value="builds" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;dashed=1;" edge="1" parent="1" source="invoice-builder" target="invoice-entity">
+        <mxCell id="builder-creates4" value="builds" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;dashed=1;" parent="1" source="invoice-builder" target="invoice-entity" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="1440" y="860" as="sourcePoint" />
             <mxPoint x="970" y="1340" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-
-        <!-- RELACIONES - Factory Method creates entities -->
-        <mxCell id="factory-creates-entity1" value="creates" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;dashed=1;" edge="1" parent="1" source="menuitem-factory" target="menuitem-entity">
+        <mxCell id="factory-creates-entity1" value="creates" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;dashed=1;" parent="1" source="menuitem-factory" target="menuitem-entity" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="970" y="460" as="sourcePoint" />
             <mxPoint x="580" y="1340" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-
-        <mxCell id="factory-creates-entity2" value="creates" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;dashed=1;" edge="1" parent="1" source="customer-factory" target="customer-entity">
+        <mxCell id="factory-creates-entity2" value="creates" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;dashed=1;" parent="1" source="customer-factory" target="customer-entity" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="1270" y="460" as="sourcePoint" />
             <mxPoint x="780" y="1340" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-
-        <mxCell id="factory-creates-entity3" value="creates" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;dashed=1;" edge="1" parent="1" source="invoice-factory" target="invoice-entity">
+        <mxCell id="factory-creates-entity3" value="creates" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;dashed=1;" parent="1" source="invoice-factory" target="invoice-entity" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="970" y="540" as="sourcePoint" />
             <mxPoint x="970" y="1340" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-
-        <mxCell id="factory-creates-entity4" value="creates" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;dashed=1;" edge="1" parent="1" source="payment-factory" target="payment-entity">
+        <mxCell id="factory-creates-entity4" value="creates" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;dashed=1;" parent="1" source="payment-factory" target="payment-entity" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="1270" y="540" as="sourcePoint" />
             <mxPoint x="1160" y="1340" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-
-        <mxCell id="factory-creates-entity5" value="creates" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;dashed=1;" edge="1" parent="1" source="reservation-factory" target="reservation-entity">
+        <mxCell id="factory-creates-entity5" value="creates" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;dashed=1;" parent="1" source="reservation-factory" target="reservation-entity" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="970" y="620" as="sourcePoint" />
             <mxPoint x="1360" y="1340" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-
-        <!-- RELACIONES ENTRE ENTIDADES -->
-        <mxCell id="order-orderitem" value="1" style="endArrow=none;html=1;endSize=12;startArrow=none;startSize=12;startFill=0;endFill=0;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="order-entity" target="orderitem-entity">
+        <mxCell id="order-orderitem" value="1" style="endArrow=none;html=1;endSize=12;startArrow=none;startSize=12;startFill=0;endFill=0;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="order-entity" target="orderitem-entity" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="250" y="1460" as="sourcePoint" />
             <mxPoint x="280" y="1420" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-
-        <mxCell id="order-orderitem-label" value="*" style="resizable=0;html=1;align=right;verticalAlign=bottom;" connectable="0" vertex="1" parent="order-orderitem">
+        <mxCell id="order-orderitem-label" value="*" style="resizable=0;html=1;align=right;verticalAlign=bottom;" parent="order-orderitem" connectable="0" vertex="1">
           <mxGeometry x="1" relative="1" as="geometry" />
         </mxCell>
-
-        <mxCell id="order-invoice" value="1" style="endArrow=none;html=1;endSize=12;startArrow=none;startSize=12;startFill=0;endFill=0;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="order-entity" target="invoice-entity">
+        <mxCell id="order-invoice" value="1" style="endArrow=none;html=1;endSize=12;startArrow=none;startSize=12;startFill=0;endFill=0;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="order-entity" target="invoice-entity" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="250" y="1400" as="sourcePoint" />
             <mxPoint x="890" y="1440" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-
-        <mxCell id="order-invoice-label" value="1" style="resizable=0;html=1;align=right;verticalAlign=bottom;" connectable="0" vertex="1" parent="order-invoice">
+        <mxCell id="order-invoice-label" value="1" style="resizable=0;html=1;align=right;verticalAlign=bottom;" parent="order-invoice" connectable="0" vertex="1">
           <mxGeometry x="1" relative="1" as="geometry" />
         </mxCell>
-
-        <mxCell id="invoice-payment" value="1" style="endArrow=none;html=1;endSize=12;startArrow=none;startSize=12;startFill=0;endFill=0;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="invoice-entity" target="payment-entity">
+        <mxCell id="invoice-payment" value="1" style="endArrow=none;html=1;endSize=12;startArrow=none;startSize=12;startFill=0;endFill=0;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="invoice-entity" target="payment-entity" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="1050" y="1440" as="sourcePoint" />
             <mxPoint x="1080" y="1410" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-
-        <mxCell id="invoice-payment-label" value="*" style="resizable=0;html=1;align=right;verticalAlign=bottom;" connectable="0" vertex="1" parent="invoice-payment">
+        <mxCell id="invoice-payment-label" value="*" style="resizable=0;html=1;align=right;verticalAlign=bottom;" parent="invoice-payment" connectable="0" vertex="1">
           <mxGeometry x="1" relative="1" as="geometry" />
         </mxCell>
-
-        <mxCell id="customer-order" value="1" style="endArrow=none;html=1;endSize=12;startArrow=none;startSize=12;startFill=0;endFill=0;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="customer-entity" target="order-entity">
+        <mxCell id="customer-order" value="1" style="endArrow=none;html=1;endSize=12;startArrow=none;startSize=12;startFill=0;endFill=0;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" parent="1" source="customer-entity" target="order-entity" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="700" y="1505" as="sourcePoint" />
             <mxPoint x="150" y="1340" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-
-        <mxCell id="customer-order-label" value="*" style="resizable=0;html=1;align=right;verticalAlign=bottom;" connectable="0" vertex="1" parent="customer-order">
+        <mxCell id="customer-order-label" value="*" style="resizable=0;html=1;align=right;verticalAlign=bottom;" parent="customer-order" connectable="0" vertex="1">
           <mxGeometry x="1" relative="1" as="geometry" />
         </mxCell>
-
-        <mxCell id="customer-reservation" value="1" style="endArrow=none;html=1;endSize=12;startArrow=none;startSize=12;startFill=0;endFill=0;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="customer-entity" target="reservation-entity">
+        <mxCell id="customer-reservation" value="1" style="endArrow=none;html=1;endSize=12;startArrow=none;startSize=12;startFill=0;endFill=0;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" parent="1" source="customer-entity" target="reservation-entity" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="860" y="1505" as="sourcePoint" />
             <mxPoint x="1270" y="1430" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-
-        <mxCell id="customer-reservation-label" value="*" style="resizable=0;html=1;align=right;verticalAlign=bottom;" connectable="0" vertex="1" parent="customer-reservation">
+        <mxCell id="customer-reservation-label" value="*" style="resizable=0;html=1;align=right;verticalAlign=bottom;" parent="customer-reservation" connectable="0" vertex="1">
           <mxGeometry x="1" relative="1" as="geometry" />
         </mxCell>
-
-        <mxCell id="menuitem-orderitem" value="1" style="endArrow=none;html=1;endSize=12;startArrow=none;startSize=12;startFill=0;endFill=0;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="menuitem-entity" target="orderitem-entity">
+        <mxCell id="menuitem-orderitem" value="1" style="endArrow=none;html=1;endSize=12;startArrow=none;startSize=12;startFill=0;endFill=0;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="menuitem-entity" target="orderitem-entity" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="490" y="1395" as="sourcePoint" />
             <mxPoint x="370" y="1500" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-
-        <mxCell id="menuitem-orderitem-label" value="*" style="resizable=0;html=1;align=right;verticalAlign=bottom;" connectable="0" vertex="1" parent="menuitem-orderitem">
+        <mxCell id="menuitem-orderitem-label" value="*" style="resizable=0;html=1;align=right;verticalAlign=bottom;" parent="menuitem-orderitem" connectable="0" vertex="1">
           <mxGeometry x="1" relative="1" as="geometry" />
         </mxCell>
-
+        <mxCell id="i3mjo8NSJTS3uTi82xFC-2" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="logger-singleton" target="logger-singleton">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="640" y="330" as="sourcePoint" />
+            <mxPoint x="690" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="i3mjo8NSJTS3uTi82xFC-3" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="cache-singleton" target="cache-singleton">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="600" y="330" as="sourcePoint" />
+            <mxPoint x="650" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="i3mjo8NSJTS3uTi82xFC-4" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="notification-singleton" target="notification-singleton">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="600" y="330" as="sourcePoint" />
+            <mxPoint x="650" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="i3mjo8NSJTS3uTi82xFC-5" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="config-singleton" target="config-singleton">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="840" y="330" as="sourcePoint" />
+            <mxPoint x="890" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="i3mjo8NSJTS3uTi82xFC-6" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="db-singleton" target="db-singleton">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1330" y="330" as="sourcePoint" />
+            <mxPoint x="1380" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="i3mjo8NSJTS3uTi82xFC-7" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="10" y="760" as="sourcePoint" />
+            <mxPoint x="420" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="i3mjo8NSJTS3uTi82xFC-8" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="menuitem-builder" target="menuitem-builder">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="730" as="sourcePoint" />
+            <mxPoint x="550" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="i3mjo8NSJTS3uTi82xFC-10" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1270" y="760" as="sourcePoint" />
+            <mxPoint x="1800" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
