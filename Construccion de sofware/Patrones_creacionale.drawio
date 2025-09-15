@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mxfile host="app.diagrams.net" modified="2024-09-14T12:00:00.000Z" agent="Claude" etag="UML-Creational-Patterns" version="21.6.5" type="device">
+<mxfile host="app.diagrams.net" modified="2024-09-14T12:00:00.000Z" etag="UML-Creational-Patterns" version="21.6.5" type="device">
   <diagram name="Patrones Creacionales" id="creational-patterns">
     <mxGraphModel dx="2074" dy="1129" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="2336" math="0" shadow="0">
       <root>
